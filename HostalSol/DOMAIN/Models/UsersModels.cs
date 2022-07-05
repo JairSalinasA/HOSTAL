@@ -7,7 +7,7 @@ using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.Linq;
 using System.Text;
-using System.Threading.Tasks; 
+using System.Threading.Tasks;
 
 namespace DOMAIN.Models
 {
@@ -31,7 +31,7 @@ namespace DOMAIN.Models
         public string Loginname { get => loginname; set => loginname = value; }
         [Required(ErrorMessage = "Se requiere contraseña")]
         [StringLength(255, ErrorMessage = "Debe tener entre 5 y 255 caracteres", MinimumLength = 5)]
-        [DataType(DataType.Password)] 
+        [DataType(DataType.Password)]
         public string Password { get => password; set => password = value; }
         public string Firstname { get => firstname; set => firstname = value; }
         public string Lastname { get => lastname; set => lastname = value; }
@@ -49,7 +49,7 @@ namespace DOMAIN.Models
 
         public string StateChanges()
         {
-            string message=null;
+            string message = null;
             try
             {
                 var userDataModel = new Users();
@@ -82,7 +82,7 @@ namespace DOMAIN.Models
             catch (Exception ex)
             {
                 System.Data.SqlClient.SqlException sqlEx = ex as System.Data.SqlClient.SqlException;
-                if (sqlEx!=null && sqlEx.Number==2627)
+                if (sqlEx != null && sqlEx.Number == 2627)
                 {
                     message = "El registro esta duplicado";
                 }
@@ -102,10 +102,17 @@ namespace DOMAIN.Models
             {
                 listUsers.Add(new UsersModels
                 {
-
-
+                    userid = item.userid,
+                    loginname = item.loginname,
+                    password = item.password,
+                    firstname = item.firstname,
+                    lastname = item.lastname,
+                    position = item.position,
+                    email = item.email
                 });
             }
+            return listUsers;
         }
     }
 }
+
