@@ -101,6 +101,7 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <EmbeddedResource Include="Views\Forms\Desktop\MaterialDash.resx">
       <DependentUpon>MaterialDash.cs</DependentUpon>
@@ -130,7 +131,6 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Helpers\" />
-    <Folder Include="Images\" />
     <Folder Include="ViewModels\" />
     <Folder Include="Views\Forms\Dashboard\" />
     <Folder Include="Views\Forms\Inventory\" />
@@ -141,6 +141,9 @@
       <Project>{5cd4e8c7-07fc-44e6-a0a8-5a04c6d7234a}</Project>
       <Name>Domain</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\icon\icons8-cash-register-30.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
