@@ -145,5 +145,8 @@
   <ItemGroup>
     <None Include="Images\icon\icons8-cash-register-30.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\Captura.PNG" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
