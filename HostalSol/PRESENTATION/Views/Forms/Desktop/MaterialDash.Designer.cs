@@ -33,7 +33,31 @@ namespace PRESENTATION.Views.Forms.Dashboard
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MaterialDash));
             this.imageList1 = new System.Windows.Forms.ImageList(this.components);
             this.tabPage4 = new System.Windows.Forms.TabPage();
+            this.panel13 = new System.Windows.Forms.Panel();
+            this.panel15 = new System.Windows.Forms.Panel();
+            this.panel16 = new System.Windows.Forms.Panel();
+            this.iconButton4 = new FontAwesome.Sharp.IconButton();
+            this.iconButton5 = new FontAwesome.Sharp.IconButton();
+            this.iconButton7 = new FontAwesome.Sharp.IconButton();
+            this.panel17 = new System.Windows.Forms.Panel();
+            this.panel19 = new System.Windows.Forms.Panel();
+            this.rjCircularPictureBox2 = new RJCodeAdvance.RJControls.RJCircularPictureBox();
+            this.iconButton8 = new FontAwesome.Sharp.IconButton();
+            this.panel23 = new System.Windows.Forms.Panel();
+            this.materialSwitch1 = new MaterialSkin.Controls.MaterialSwitch();
             this.tabPage3 = new System.Windows.Forms.TabPage();
+            this.panel18 = new System.Windows.Forms.Panel();
+            this.panelI = new System.Windows.Forms.Panel();
+            this.panel20 = new System.Windows.Forms.Panel();
+            this.iconButton10 = new FontAwesome.Sharp.IconButton();
+            this.iconButton11 = new FontAwesome.Sharp.IconButton();
+            this.iconButton12 = new FontAwesome.Sharp.IconButton();
+            this.panel22 = new System.Windows.Forms.Panel();
+            this.panel14 = new System.Windows.Forms.Panel();
+            this.rjCircularPictureBox1 = new RJCodeAdvance.RJControls.RJCircularPictureBox();
+            this.iconButton9 = new FontAwesome.Sharp.IconButton();
+            this.panel21 = new System.Windows.Forms.Panel();
+            this.materialSwitch2 = new MaterialSkin.Controls.MaterialSwitch();
             this.tabPage2 = new System.Windows.Forms.TabPage();
             this.panel1 = new System.Windows.Forms.Panel();
             this.panel8 = new System.Windows.Forms.Panel();
@@ -89,20 +113,33 @@ namespace PRESENTATION.Views.Forms.Dashboard
             this.materialLabel1 = new MaterialSkin.Controls.MaterialLabel();
             this.materialTabControl1 = new MaterialSkin.Controls.MaterialTabControl();
             this.tabPage5 = new System.Windows.Forms.TabPage();
-            this.horafecha = new System.Windows.Forms.Timer(this.components);
-            this.imagenAdmon = new System.Windows.Forms.ImageList(this.components);
             this.panel9 = new System.Windows.Forms.Panel();
             this.panel10 = new System.Windows.Forms.Panel();
-            this.themeToggle = new MaterialSkin.Controls.MaterialSwitch();
+            this.panelDesktop = new System.Windows.Forms.Panel();
             this.panelMenu = new System.Windows.Forms.Panel();
-            this.panel12 = new System.Windows.Forms.Panel();
-            this.panel13 = new System.Windows.Forms.Panel();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.panel14 = new System.Windows.Forms.Panel();
             this.iconButton1 = new FontAwesome.Sharp.IconButton();
             this.iconButton2 = new FontAwesome.Sharp.IconButton();
             this.iconButton3 = new FontAwesome.Sharp.IconButton();
-            this.iconButton4 = new FontAwesome.Sharp.IconButton();
+            this.panel24 = new System.Windows.Forms.Panel();
+            this.panel25 = new System.Windows.Forms.Panel();
+            this.rjCircularPictureBox3 = new RJCodeAdvance.RJControls.RJCircularPictureBox();
+            this.iconButton6 = new FontAwesome.Sharp.IconButton();
+            this.panel26 = new System.Windows.Forms.Panel();
+            this.themeToggle = new MaterialSkin.Controls.MaterialSwitch();
+            this.horafecha = new System.Windows.Forms.Timer(this.components);
+            this.imagenAdmon = new System.Windows.Forms.ImageList(this.components);
+            this.tabPage4.SuspendLayout();
+            this.panel13.SuspendLayout();
+            this.panel16.SuspendLayout();
+            this.panel19.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.rjCircularPictureBox2)).BeginInit();
+            this.panel23.SuspendLayout();
+            this.tabPage3.SuspendLayout();
+            this.panel18.SuspendLayout();
+            this.panel20.SuspendLayout();
+            this.panel14.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.rjCircularPictureBox1)).BeginInit();
+            this.panel21.SuspendLayout();
             this.tabPage2.SuspendLayout();
             this.panel1.SuspendLayout();
             this.panel8.SuspendLayout();
@@ -132,8 +169,9 @@ namespace PRESENTATION.Views.Forms.Dashboard
             this.panel9.SuspendLayout();
             this.panel10.SuspendLayout();
             this.panelMenu.SuspendLayout();
-            this.panel13.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.panel25.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.rjCircularPictureBox3)).BeginInit();
+            this.panel26.SuspendLayout();
             this.SuspendLayout();
             // 
             // imageList1
@@ -149,6 +187,7 @@ namespace PRESENTATION.Views.Forms.Dashboard
             // 
             // tabPage4
             // 
+            this.tabPage4.Controls.Add(this.panel13);
             this.tabPage4.ImageKey = "icons8-shop-30.png";
             this.tabPage4.Location = new System.Drawing.Point(4, 39);
             this.tabPage4.Name = "tabPage4";
@@ -157,8 +196,188 @@ namespace PRESENTATION.Views.Forms.Dashboard
             this.tabPage4.Text = "Punto de venta";
             this.tabPage4.UseVisualStyleBackColor = true;
             // 
+            // panel13
+            // 
+            this.panel13.Controls.Add(this.panel15);
+            this.panel13.Controls.Add(this.panel16);
+            this.panel13.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panel13.Location = new System.Drawing.Point(0, 0);
+            this.panel13.Name = "panel13";
+            this.panel13.Size = new System.Drawing.Size(1266, 678);
+            this.panel13.TabIndex = 2;
+            // 
+            // panel15
+            // 
+            this.panel15.BackColor = System.Drawing.SystemColors.Control;
+            this.panel15.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panel15.Location = new System.Drawing.Point(200, 0);
+            this.panel15.Name = "panel15";
+            this.panel15.Size = new System.Drawing.Size(1066, 678);
+            this.panel15.TabIndex = 4;
+            // 
+            // panel16
+            // 
+            this.panel16.BackColor = System.Drawing.Color.White;
+            this.panel16.Controls.Add(this.iconButton4);
+            this.panel16.Controls.Add(this.iconButton5);
+            this.panel16.Controls.Add(this.iconButton7);
+            this.panel16.Controls.Add(this.panel17);
+            this.panel16.Controls.Add(this.panel19);
+            this.panel16.Controls.Add(this.iconButton8);
+            this.panel16.Controls.Add(this.panel23);
+            this.panel16.Dock = System.Windows.Forms.DockStyle.Left;
+            this.panel16.Location = new System.Drawing.Point(0, 0);
+            this.panel16.Name = "panel16";
+            this.panel16.Size = new System.Drawing.Size(200, 678);
+            this.panel16.TabIndex = 3;
+            // 
+            // iconButton4
+            // 
+            this.iconButton4.Dock = System.Windows.Forms.DockStyle.Top;
+            this.iconButton4.FlatAppearance.BorderSize = 0;
+            this.iconButton4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.iconButton4.ForeColor = System.Drawing.Color.Black;
+            this.iconButton4.IconChar = FontAwesome.Sharp.IconChar.Sun;
+            this.iconButton4.IconColor = System.Drawing.Color.Black;
+            this.iconButton4.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.iconButton4.IconSize = 25;
+            this.iconButton4.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.iconButton4.Location = new System.Drawing.Point(0, 324);
+            this.iconButton4.Name = "iconButton4";
+            this.iconButton4.Padding = new System.Windows.Forms.Padding(10, 0, 20, 0);
+            this.iconButton4.Size = new System.Drawing.Size(200, 40);
+            this.iconButton4.TabIndex = 4;
+            this.iconButton4.Text = "Usuarios";
+            this.iconButton4.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.iconButton4.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.iconButton4.UseVisualStyleBackColor = true;
+            // 
+            // iconButton5
+            // 
+            this.iconButton5.Dock = System.Windows.Forms.DockStyle.Top;
+            this.iconButton5.FlatAppearance.BorderSize = 0;
+            this.iconButton5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.iconButton5.ForeColor = System.Drawing.Color.Black;
+            this.iconButton5.IconChar = FontAwesome.Sharp.IconChar.Sun;
+            this.iconButton5.IconColor = System.Drawing.Color.Black;
+            this.iconButton5.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.iconButton5.IconSize = 25;
+            this.iconButton5.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.iconButton5.Location = new System.Drawing.Point(0, 284);
+            this.iconButton5.Name = "iconButton5";
+            this.iconButton5.Padding = new System.Windows.Forms.Padding(10, 0, 20, 0);
+            this.iconButton5.Size = new System.Drawing.Size(200, 40);
+            this.iconButton5.TabIndex = 2;
+            this.iconButton5.Text = "Apariencia";
+            this.iconButton5.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.iconButton5.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.iconButton5.UseVisualStyleBackColor = true;
+            // 
+            // iconButton7
+            // 
+            this.iconButton7.Dock = System.Windows.Forms.DockStyle.Top;
+            this.iconButton7.FlatAppearance.BorderSize = 0;
+            this.iconButton7.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.iconButton7.ForeColor = System.Drawing.Color.Black;
+            this.iconButton7.IconChar = FontAwesome.Sharp.IconChar.Sun;
+            this.iconButton7.IconColor = System.Drawing.Color.Black;
+            this.iconButton7.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.iconButton7.IconSize = 25;
+            this.iconButton7.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.iconButton7.Location = new System.Drawing.Point(0, 244);
+            this.iconButton7.Name = "iconButton7";
+            this.iconButton7.Padding = new System.Windows.Forms.Padding(10, 0, 20, 0);
+            this.iconButton7.Size = new System.Drawing.Size(200, 40);
+            this.iconButton7.TabIndex = 3;
+            this.iconButton7.Text = "Cuenta";
+            this.iconButton7.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.iconButton7.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.iconButton7.UseVisualStyleBackColor = true;
+            // 
+            // panel17
+            // 
+            this.panel17.BackColor = System.Drawing.Color.White;
+            this.panel17.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel17.Location = new System.Drawing.Point(0, 204);
+            this.panel17.Name = "panel17";
+            this.panel17.Size = new System.Drawing.Size(200, 40);
+            this.panel17.TabIndex = 1;
+            // 
+            // panel19
+            // 
+            this.panel19.Controls.Add(this.rjCircularPictureBox2);
+            this.panel19.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel19.Location = new System.Drawing.Point(0, 0);
+            this.panel19.Name = "panel19";
+            this.panel19.Size = new System.Drawing.Size(200, 204);
+            this.panel19.TabIndex = 9;
+            // 
+            // rjCircularPictureBox2
+            // 
+            this.rjCircularPictureBox2.BorderCapStyle = System.Drawing.Drawing2D.DashCap.Flat;
+            this.rjCircularPictureBox2.BorderColor = System.Drawing.Color.RoyalBlue;
+            this.rjCircularPictureBox2.BorderColor2 = System.Drawing.Color.HotPink;
+            this.rjCircularPictureBox2.BorderLineStyle = System.Drawing.Drawing2D.DashStyle.Solid;
+            this.rjCircularPictureBox2.BorderSize = 2;
+            this.rjCircularPictureBox2.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.rjCircularPictureBox2.GradientAngle = 50F;
+            this.rjCircularPictureBox2.Image = global::PRESENTATION.Properties.Resources.Captura;
+            this.rjCircularPictureBox2.Location = new System.Drawing.Point(0, 0);
+            this.rjCircularPictureBox2.Name = "rjCircularPictureBox2";
+            this.rjCircularPictureBox2.Size = new System.Drawing.Size(200, 200);
+            this.rjCircularPictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.rjCircularPictureBox2.TabIndex = 0;
+            this.rjCircularPictureBox2.TabStop = false;
+            // 
+            // iconButton8
+            // 
+            this.iconButton8.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.iconButton8.FlatAppearance.BorderSize = 0;
+            this.iconButton8.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.iconButton8.ForeColor = System.Drawing.Color.Black;
+            this.iconButton8.IconChar = FontAwesome.Sharp.IconChar.Palette;
+            this.iconButton8.IconColor = System.Drawing.Color.Black;
+            this.iconButton8.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.iconButton8.IconSize = 25;
+            this.iconButton8.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.iconButton8.Location = new System.Drawing.Point(0, 595);
+            this.iconButton8.Name = "iconButton8";
+            this.iconButton8.Padding = new System.Windows.Forms.Padding(10, 0, 20, 0);
+            this.iconButton8.Size = new System.Drawing.Size(200, 40);
+            this.iconButton8.TabIndex = 8;
+            this.iconButton8.Text = "Tema Obscuro";
+            this.iconButton8.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.iconButton8.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.iconButton8.UseVisualStyleBackColor = true;
+            // 
+            // panel23
+            // 
+            this.panel23.Controls.Add(this.materialSwitch1);
+            this.panel23.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.panel23.Location = new System.Drawing.Point(0, 635);
+            this.panel23.Name = "panel23";
+            this.panel23.Size = new System.Drawing.Size(200, 43);
+            this.panel23.TabIndex = 7;
+            // 
+            // materialSwitch1
+            // 
+            this.materialSwitch1.AutoSize = true;
+            this.materialSwitch1.Depth = 0;
+            this.materialSwitch1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.materialSwitch1.Location = new System.Drawing.Point(0, 0);
+            this.materialSwitch1.Margin = new System.Windows.Forms.Padding(0);
+            this.materialSwitch1.MouseLocation = new System.Drawing.Point(-1, -1);
+            this.materialSwitch1.MouseState = MaterialSkin.MouseState.HOVER;
+            this.materialSwitch1.Name = "materialSwitch1";
+            this.materialSwitch1.Ripple = true;
+            this.materialSwitch1.Size = new System.Drawing.Size(200, 43);
+            this.materialSwitch1.TabIndex = 2;
+            this.materialSwitch1.Text = "materialSwitch1";
+            this.materialSwitch1.UseVisualStyleBackColor = true;
+            // 
             // tabPage3
             // 
+            this.tabPage3.Controls.Add(this.panel18);
             this.tabPage3.ImageKey = "icons8-trolley-26.png";
             this.tabPage3.Location = new System.Drawing.Point(4, 39);
             this.tabPage3.Name = "tabPage3";
@@ -166,6 +385,185 @@ namespace PRESENTATION.Views.Forms.Dashboard
             this.tabPage3.TabIndex = 2;
             this.tabPage3.Text = "Inventario";
             this.tabPage3.UseVisualStyleBackColor = true;
+            // 
+            // panel18
+            // 
+            this.panel18.Controls.Add(this.panelI);
+            this.panel18.Controls.Add(this.panel20);
+            this.panel18.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panel18.Location = new System.Drawing.Point(0, 0);
+            this.panel18.Name = "panel18";
+            this.panel18.Size = new System.Drawing.Size(1266, 678);
+            this.panel18.TabIndex = 1;
+            // 
+            // panelI
+            // 
+            this.panelI.BackColor = System.Drawing.SystemColors.Control;
+            this.panelI.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panelI.Location = new System.Drawing.Point(200, 0);
+            this.panelI.Name = "panelI";
+            this.panelI.Size = new System.Drawing.Size(1066, 678);
+            this.panelI.TabIndex = 4;
+            // 
+            // panel20
+            // 
+            this.panel20.BackColor = System.Drawing.Color.White;
+            this.panel20.Controls.Add(this.iconButton10);
+            this.panel20.Controls.Add(this.iconButton11);
+            this.panel20.Controls.Add(this.iconButton12);
+            this.panel20.Controls.Add(this.panel22);
+            this.panel20.Controls.Add(this.panel14);
+            this.panel20.Controls.Add(this.iconButton9);
+            this.panel20.Controls.Add(this.panel21);
+            this.panel20.Dock = System.Windows.Forms.DockStyle.Left;
+            this.panel20.Location = new System.Drawing.Point(0, 0);
+            this.panel20.Name = "panel20";
+            this.panel20.Size = new System.Drawing.Size(200, 678);
+            this.panel20.TabIndex = 3;
+            // 
+            // iconButton10
+            // 
+            this.iconButton10.Dock = System.Windows.Forms.DockStyle.Top;
+            this.iconButton10.FlatAppearance.BorderSize = 0;
+            this.iconButton10.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.iconButton10.ForeColor = System.Drawing.Color.Black;
+            this.iconButton10.IconChar = FontAwesome.Sharp.IconChar.Sun;
+            this.iconButton10.IconColor = System.Drawing.Color.Black;
+            this.iconButton10.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.iconButton10.IconSize = 25;
+            this.iconButton10.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.iconButton10.Location = new System.Drawing.Point(0, 324);
+            this.iconButton10.Name = "iconButton10";
+            this.iconButton10.Padding = new System.Windows.Forms.Padding(10, 0, 20, 0);
+            this.iconButton10.Size = new System.Drawing.Size(200, 40);
+            this.iconButton10.TabIndex = 4;
+            this.iconButton10.Text = "Usuarios";
+            this.iconButton10.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.iconButton10.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.iconButton10.UseVisualStyleBackColor = true;
+            // 
+            // iconButton11
+            // 
+            this.iconButton11.Dock = System.Windows.Forms.DockStyle.Top;
+            this.iconButton11.FlatAppearance.BorderSize = 0;
+            this.iconButton11.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.iconButton11.ForeColor = System.Drawing.Color.Black;
+            this.iconButton11.IconChar = FontAwesome.Sharp.IconChar.Sun;
+            this.iconButton11.IconColor = System.Drawing.Color.Black;
+            this.iconButton11.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.iconButton11.IconSize = 25;
+            this.iconButton11.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.iconButton11.Location = new System.Drawing.Point(0, 284);
+            this.iconButton11.Name = "iconButton11";
+            this.iconButton11.Padding = new System.Windows.Forms.Padding(10, 0, 20, 0);
+            this.iconButton11.Size = new System.Drawing.Size(200, 40);
+            this.iconButton11.TabIndex = 2;
+            this.iconButton11.Text = "Apariencia";
+            this.iconButton11.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.iconButton11.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.iconButton11.UseVisualStyleBackColor = true;
+            // 
+            // iconButton12
+            // 
+            this.iconButton12.Dock = System.Windows.Forms.DockStyle.Top;
+            this.iconButton12.FlatAppearance.BorderSize = 0;
+            this.iconButton12.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.iconButton12.ForeColor = System.Drawing.Color.Black;
+            this.iconButton12.IconChar = FontAwesome.Sharp.IconChar.Sun;
+            this.iconButton12.IconColor = System.Drawing.Color.Black;
+            this.iconButton12.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.iconButton12.IconSize = 25;
+            this.iconButton12.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.iconButton12.Location = new System.Drawing.Point(0, 244);
+            this.iconButton12.Name = "iconButton12";
+            this.iconButton12.Padding = new System.Windows.Forms.Padding(10, 0, 20, 0);
+            this.iconButton12.Size = new System.Drawing.Size(200, 40);
+            this.iconButton12.TabIndex = 3;
+            this.iconButton12.Text = "Cuenta";
+            this.iconButton12.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.iconButton12.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.iconButton12.UseVisualStyleBackColor = true;
+            // 
+            // panel22
+            // 
+            this.panel22.BackColor = System.Drawing.Color.White;
+            this.panel22.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel22.Location = new System.Drawing.Point(0, 204);
+            this.panel22.Name = "panel22";
+            this.panel22.Size = new System.Drawing.Size(200, 40);
+            this.panel22.TabIndex = 1;
+            // 
+            // panel14
+            // 
+            this.panel14.Controls.Add(this.rjCircularPictureBox1);
+            this.panel14.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel14.Location = new System.Drawing.Point(0, 0);
+            this.panel14.Name = "panel14";
+            this.panel14.Size = new System.Drawing.Size(200, 204);
+            this.panel14.TabIndex = 9;
+            // 
+            // rjCircularPictureBox1
+            // 
+            this.rjCircularPictureBox1.BorderCapStyle = System.Drawing.Drawing2D.DashCap.Flat;
+            this.rjCircularPictureBox1.BorderColor = System.Drawing.Color.RoyalBlue;
+            this.rjCircularPictureBox1.BorderColor2 = System.Drawing.Color.HotPink;
+            this.rjCircularPictureBox1.BorderLineStyle = System.Drawing.Drawing2D.DashStyle.Solid;
+            this.rjCircularPictureBox1.BorderSize = 2;
+            this.rjCircularPictureBox1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.rjCircularPictureBox1.GradientAngle = 50F;
+            this.rjCircularPictureBox1.Image = global::PRESENTATION.Properties.Resources.Captura;
+            this.rjCircularPictureBox1.Location = new System.Drawing.Point(0, 0);
+            this.rjCircularPictureBox1.Name = "rjCircularPictureBox1";
+            this.rjCircularPictureBox1.Size = new System.Drawing.Size(200, 200);
+            this.rjCircularPictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.rjCircularPictureBox1.TabIndex = 0;
+            this.rjCircularPictureBox1.TabStop = false;
+            // 
+            // iconButton9
+            // 
+            this.iconButton9.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.iconButton9.FlatAppearance.BorderSize = 0;
+            this.iconButton9.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.iconButton9.ForeColor = System.Drawing.Color.Black;
+            this.iconButton9.IconChar = FontAwesome.Sharp.IconChar.Palette;
+            this.iconButton9.IconColor = System.Drawing.Color.Black;
+            this.iconButton9.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.iconButton9.IconSize = 25;
+            this.iconButton9.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.iconButton9.Location = new System.Drawing.Point(0, 595);
+            this.iconButton9.Name = "iconButton9";
+            this.iconButton9.Padding = new System.Windows.Forms.Padding(10, 0, 20, 0);
+            this.iconButton9.Size = new System.Drawing.Size(200, 40);
+            this.iconButton9.TabIndex = 8;
+            this.iconButton9.Text = "Tema Obscuro";
+            this.iconButton9.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.iconButton9.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.iconButton9.UseVisualStyleBackColor = true;
+            // 
+            // panel21
+            // 
+            this.panel21.Controls.Add(this.materialSwitch2);
+            this.panel21.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.panel21.Location = new System.Drawing.Point(0, 635);
+            this.panel21.Name = "panel21";
+            this.panel21.Size = new System.Drawing.Size(200, 43);
+            this.panel21.TabIndex = 7;
+            // 
+            // materialSwitch2
+            // 
+            this.materialSwitch2.AutoSize = true;
+            this.materialSwitch2.Depth = 0;
+            this.materialSwitch2.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.materialSwitch2.Location = new System.Drawing.Point(0, 0);
+            this.materialSwitch2.Margin = new System.Windows.Forms.Padding(0);
+            this.materialSwitch2.MouseLocation = new System.Drawing.Point(-1, -1);
+            this.materialSwitch2.MouseState = MaterialSkin.MouseState.HOVER;
+            this.materialSwitch2.Name = "materialSwitch2";
+            this.materialSwitch2.Ripple = true;
+            this.materialSwitch2.Size = new System.Drawing.Size(200, 43);
+            this.materialSwitch2.TabIndex = 2;
+            this.materialSwitch2.Text = "materialSwitch1";
+            this.materialSwitch2.UseVisualStyleBackColor = true;
             // 
             // tabPage2
             // 
@@ -992,20 +1390,6 @@ namespace PRESENTATION.Views.Forms.Dashboard
             this.tabPage5.TabIndex = 4;
             this.tabPage5.Text = "Configuracion";
             // 
-            // horafecha
-            // 
-            this.horafecha.Enabled = true;
-            this.horafecha.Tick += new System.EventHandler(this.horafecha_Tick);
-            // 
-            // imagenAdmon
-            // 
-            this.imagenAdmon.ImageStream = ((System.Windows.Forms.ImageListStreamer)(resources.GetObject("imagenAdmon.ImageStream")));
-            this.imagenAdmon.TransparentColor = System.Drawing.Color.Transparent;
-            this.imagenAdmon.Images.SetKeyName(0, "icons8-check-in-50 (1).png");
-            this.imagenAdmon.Images.SetKeyName(1, "icons8-check-in-50.png");
-            this.imagenAdmon.Images.SetKeyName(2, "icons8-hotel-50 (1).png");
-            this.imagenAdmon.Images.SetKeyName(3, "icons8-hotel-50.png");
-            // 
             // panel9
             // 
             this.panel9.Controls.Add(this.panel10);
@@ -1017,81 +1401,38 @@ namespace PRESENTATION.Views.Forms.Dashboard
             // 
             // panel10
             // 
-            this.panel10.Controls.Add(this.panel12);
+            this.panel10.Controls.Add(this.panelDesktop);
             this.panel10.Controls.Add(this.panelMenu);
             this.panel10.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel10.Location = new System.Drawing.Point(0, 0);
             this.panel10.Name = "panel10";
             this.panel10.Size = new System.Drawing.Size(1266, 678);
-            this.panel10.TabIndex = 0;
+            this.panel10.TabIndex = 3;
             // 
-            // themeToggle
+            // panelDesktop
             // 
-            this.themeToggle.AutoSize = true;
-            this.themeToggle.Depth = 0;
-            this.themeToggle.Location = new System.Drawing.Point(13, 408);
-            this.themeToggle.Margin = new System.Windows.Forms.Padding(0);
-            this.themeToggle.MouseLocation = new System.Drawing.Point(-1, -1);
-            this.themeToggle.MouseState = MaterialSkin.MouseState.HOVER;
-            this.themeToggle.Name = "themeToggle";
-            this.themeToggle.Ripple = true;
-            this.themeToggle.Size = new System.Drawing.Size(173, 37);
-            this.themeToggle.TabIndex = 2;
-            this.themeToggle.Text = "materialSwitch1";
-            this.themeToggle.UseVisualStyleBackColor = true;
-            this.themeToggle.CheckedChanged += new System.EventHandler(this.themeToggle_CheckedChanged_1);
+            this.panelDesktop.BackColor = System.Drawing.SystemColors.Control;
+            this.panelDesktop.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panelDesktop.Location = new System.Drawing.Point(200, 0);
+            this.panelDesktop.Name = "panelDesktop";
+            this.panelDesktop.Size = new System.Drawing.Size(1066, 678);
+            this.panelDesktop.TabIndex = 4;
             // 
             // panelMenu
             // 
-            this.panelMenu.Controls.Add(this.themeToggle);
-            this.panelMenu.Controls.Add(this.iconButton4);
-            this.panelMenu.Controls.Add(this.iconButton3);
-            this.panelMenu.Controls.Add(this.iconButton2);
+            this.panelMenu.BackColor = System.Drawing.Color.White;
             this.panelMenu.Controls.Add(this.iconButton1);
-            this.panelMenu.Controls.Add(this.panel14);
-            this.panelMenu.Controls.Add(this.panel13);
+            this.panelMenu.Controls.Add(this.iconButton2);
+            this.panelMenu.Controls.Add(this.iconButton3);
+            this.panelMenu.Controls.Add(this.panel24);
+            this.panelMenu.Controls.Add(this.panel25);
+            this.panelMenu.Controls.Add(this.iconButton6);
+            this.panelMenu.Controls.Add(this.panel26);
             this.panelMenu.Dock = System.Windows.Forms.DockStyle.Left;
             this.panelMenu.Location = new System.Drawing.Point(0, 0);
             this.panelMenu.Name = "panelMenu";
             this.panelMenu.Size = new System.Drawing.Size(200, 678);
             this.panelMenu.TabIndex = 3;
-            // 
-            // panel12
-            // 
-            this.panel12.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel12.Location = new System.Drawing.Point(200, 0);
-            this.panel12.Name = "panel12";
-            this.panel12.Size = new System.Drawing.Size(1066, 678);
-            this.panel12.TabIndex = 4;
-            // 
-            // panel13
-            // 
-            this.panel13.Controls.Add(this.pictureBox1);
-            this.panel13.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel13.Location = new System.Drawing.Point(0, 0);
-            this.panel13.Name = "panel13";
-            this.panel13.Size = new System.Drawing.Size(200, 209);
-            this.panel13.TabIndex = 0;
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pictureBox1.Image = global::PRESENTATION.Properties.Resources.Captura;
-            this.pictureBox1.InitialImage = ((System.Drawing.Image)(resources.GetObject("pictureBox1.InitialImage")));
-            this.pictureBox1.Location = new System.Drawing.Point(0, 0);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(200, 209);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox1.TabIndex = 0;
-            this.pictureBox1.TabStop = false;
-            // 
-            // panel14
-            // 
-            this.panel14.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel14.Location = new System.Drawing.Point(0, 209);
-            this.panel14.Name = "panel14";
-            this.panel14.Size = new System.Drawing.Size(200, 22);
-            this.panel14.TabIndex = 1;
             // 
             // iconButton1
             // 
@@ -1104,12 +1445,12 @@ namespace PRESENTATION.Views.Forms.Dashboard
             this.iconButton1.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.iconButton1.IconSize = 25;
             this.iconButton1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.iconButton1.Location = new System.Drawing.Point(0, 231);
+            this.iconButton1.Location = new System.Drawing.Point(0, 324);
             this.iconButton1.Name = "iconButton1";
             this.iconButton1.Padding = new System.Windows.Forms.Padding(10, 0, 20, 0);
             this.iconButton1.Size = new System.Drawing.Size(200, 40);
-            this.iconButton1.TabIndex = 2;
-            this.iconButton1.Text = "Administracion de la cuenta";
+            this.iconButton1.TabIndex = 4;
+            this.iconButton1.Text = "Usuarios";
             this.iconButton1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.iconButton1.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.iconButton1.UseVisualStyleBackColor = true;
@@ -1125,15 +1466,16 @@ namespace PRESENTATION.Views.Forms.Dashboard
             this.iconButton2.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.iconButton2.IconSize = 25;
             this.iconButton2.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.iconButton2.Location = new System.Drawing.Point(0, 271);
+            this.iconButton2.Location = new System.Drawing.Point(0, 284);
             this.iconButton2.Name = "iconButton2";
             this.iconButton2.Padding = new System.Windows.Forms.Padding(10, 0, 20, 0);
             this.iconButton2.Size = new System.Drawing.Size(200, 40);
-            this.iconButton2.TabIndex = 3;
-            this.iconButton2.Text = "Administracion de la cuenta";
+            this.iconButton2.TabIndex = 2;
+            this.iconButton2.Text = "Apariencia";
             this.iconButton2.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.iconButton2.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.iconButton2.UseVisualStyleBackColor = true;
+            this.iconButton2.Click += new System.EventHandler(this.iconButton2_Click_1);
             // 
             // iconButton3
             // 
@@ -1146,36 +1488,111 @@ namespace PRESENTATION.Views.Forms.Dashboard
             this.iconButton3.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.iconButton3.IconSize = 25;
             this.iconButton3.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.iconButton3.Location = new System.Drawing.Point(0, 311);
+            this.iconButton3.Location = new System.Drawing.Point(0, 244);
             this.iconButton3.Name = "iconButton3";
             this.iconButton3.Padding = new System.Windows.Forms.Padding(10, 0, 20, 0);
             this.iconButton3.Size = new System.Drawing.Size(200, 40);
-            this.iconButton3.TabIndex = 4;
-            this.iconButton3.Text = "Administracion de la cuenta";
+            this.iconButton3.TabIndex = 3;
+            this.iconButton3.Text = "Cuenta";
             this.iconButton3.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.iconButton3.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.iconButton3.UseVisualStyleBackColor = true;
+            this.iconButton3.Click += new System.EventHandler(this.iconButton3_Click);
             // 
-            // iconButton4
+            // panel24
             // 
-            this.iconButton4.Dock = System.Windows.Forms.DockStyle.Top;
-            this.iconButton4.FlatAppearance.BorderSize = 0;
-            this.iconButton4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.iconButton4.ForeColor = System.Drawing.Color.Black;
-            this.iconButton4.IconChar = FontAwesome.Sharp.IconChar.Sun;
-            this.iconButton4.IconColor = System.Drawing.Color.Black;
-            this.iconButton4.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.iconButton4.IconSize = 25;
-            this.iconButton4.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.iconButton4.Location = new System.Drawing.Point(0, 351);
-            this.iconButton4.Name = "iconButton4";
-            this.iconButton4.Padding = new System.Windows.Forms.Padding(10, 0, 20, 0);
-            this.iconButton4.Size = new System.Drawing.Size(200, 40);
-            this.iconButton4.TabIndex = 5;
-            this.iconButton4.Text = "Administracion de la cuenta";
-            this.iconButton4.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.iconButton4.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.iconButton4.UseVisualStyleBackColor = true;
+            this.panel24.BackColor = System.Drawing.Color.White;
+            this.panel24.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel24.Location = new System.Drawing.Point(0, 204);
+            this.panel24.Name = "panel24";
+            this.panel24.Size = new System.Drawing.Size(200, 40);
+            this.panel24.TabIndex = 1;
+            // 
+            // panel25
+            // 
+            this.panel25.Controls.Add(this.rjCircularPictureBox3);
+            this.panel25.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel25.Location = new System.Drawing.Point(0, 0);
+            this.panel25.Name = "panel25";
+            this.panel25.Size = new System.Drawing.Size(200, 204);
+            this.panel25.TabIndex = 9;
+            // 
+            // rjCircularPictureBox3
+            // 
+            this.rjCircularPictureBox3.BorderCapStyle = System.Drawing.Drawing2D.DashCap.Flat;
+            this.rjCircularPictureBox3.BorderColor = System.Drawing.Color.RoyalBlue;
+            this.rjCircularPictureBox3.BorderColor2 = System.Drawing.Color.HotPink;
+            this.rjCircularPictureBox3.BorderLineStyle = System.Drawing.Drawing2D.DashStyle.Solid;
+            this.rjCircularPictureBox3.BorderSize = 2;
+            this.rjCircularPictureBox3.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.rjCircularPictureBox3.GradientAngle = 50F;
+            this.rjCircularPictureBox3.Image = global::PRESENTATION.Properties.Resources.Captura;
+            this.rjCircularPictureBox3.Location = new System.Drawing.Point(0, 0);
+            this.rjCircularPictureBox3.Name = "rjCircularPictureBox3";
+            this.rjCircularPictureBox3.Size = new System.Drawing.Size(200, 200);
+            this.rjCircularPictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.rjCircularPictureBox3.TabIndex = 0;
+            this.rjCircularPictureBox3.TabStop = false;
+            // 
+            // iconButton6
+            // 
+            this.iconButton6.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.iconButton6.FlatAppearance.BorderSize = 0;
+            this.iconButton6.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.iconButton6.ForeColor = System.Drawing.Color.Black;
+            this.iconButton6.IconChar = FontAwesome.Sharp.IconChar.Palette;
+            this.iconButton6.IconColor = System.Drawing.Color.Black;
+            this.iconButton6.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.iconButton6.IconSize = 25;
+            this.iconButton6.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.iconButton6.Location = new System.Drawing.Point(0, 595);
+            this.iconButton6.Name = "iconButton6";
+            this.iconButton6.Padding = new System.Windows.Forms.Padding(10, 0, 20, 0);
+            this.iconButton6.Size = new System.Drawing.Size(200, 40);
+            this.iconButton6.TabIndex = 8;
+            this.iconButton6.Text = "Tema Obscuro";
+            this.iconButton6.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.iconButton6.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.iconButton6.UseVisualStyleBackColor = true;
+            // 
+            // panel26
+            // 
+            this.panel26.Controls.Add(this.themeToggle);
+            this.panel26.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.panel26.Location = new System.Drawing.Point(0, 635);
+            this.panel26.Name = "panel26";
+            this.panel26.Size = new System.Drawing.Size(200, 43);
+            this.panel26.TabIndex = 7;
+            // 
+            // themeToggle
+            // 
+            this.themeToggle.AutoSize = true;
+            this.themeToggle.Depth = 0;
+            this.themeToggle.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.themeToggle.Location = new System.Drawing.Point(0, 0);
+            this.themeToggle.Margin = new System.Windows.Forms.Padding(0);
+            this.themeToggle.MouseLocation = new System.Drawing.Point(-1, -1);
+            this.themeToggle.MouseState = MaterialSkin.MouseState.HOVER;
+            this.themeToggle.Name = "themeToggle";
+            this.themeToggle.Ripple = true;
+            this.themeToggle.Size = new System.Drawing.Size(200, 43);
+            this.themeToggle.TabIndex = 2;
+            this.themeToggle.Text = "Tema Obscuro";
+            this.themeToggle.UseVisualStyleBackColor = true;
+            // 
+            // horafecha
+            // 
+            this.horafecha.Enabled = true;
+            this.horafecha.Tick += new System.EventHandler(this.horafecha_Tick);
+            // 
+            // imagenAdmon
+            // 
+            this.imagenAdmon.ImageStream = ((System.Windows.Forms.ImageListStreamer)(resources.GetObject("imagenAdmon.ImageStream")));
+            this.imagenAdmon.TransparentColor = System.Drawing.Color.Transparent;
+            this.imagenAdmon.Images.SetKeyName(0, "icons8-check-in-50 (1).png");
+            this.imagenAdmon.Images.SetKeyName(1, "icons8-check-in-50.png");
+            this.imagenAdmon.Images.SetKeyName(2, "icons8-hotel-50 (1).png");
+            this.imagenAdmon.Images.SetKeyName(3, "icons8-hotel-50.png");
             // 
             // MaterialDash
             // 
@@ -1190,6 +1607,20 @@ namespace PRESENTATION.Views.Forms.Dashboard
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Inicio";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
+            this.tabPage4.ResumeLayout(false);
+            this.panel13.ResumeLayout(false);
+            this.panel16.ResumeLayout(false);
+            this.panel19.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.rjCircularPictureBox2)).EndInit();
+            this.panel23.ResumeLayout(false);
+            this.panel23.PerformLayout();
+            this.tabPage3.ResumeLayout(false);
+            this.panel18.ResumeLayout(false);
+            this.panel20.ResumeLayout(false);
+            this.panel14.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.rjCircularPictureBox1)).EndInit();
+            this.panel21.ResumeLayout(false);
+            this.panel21.PerformLayout();
             this.tabPage2.ResumeLayout(false);
             this.panel1.ResumeLayout(false);
             this.panel8.ResumeLayout(false);
@@ -1235,9 +1666,10 @@ namespace PRESENTATION.Views.Forms.Dashboard
             this.panel9.ResumeLayout(false);
             this.panel10.ResumeLayout(false);
             this.panelMenu.ResumeLayout(false);
-            this.panelMenu.PerformLayout();
-            this.panel13.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            this.panel25.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.rjCircularPictureBox3)).EndInit();
+            this.panel26.ResumeLayout(false);
+            this.panel26.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -1249,71 +1681,96 @@ namespace PRESENTATION.Views.Forms.Dashboard
         private System.Windows.Forms.TabPage tabPage2;
         private MaterialSkin.Controls.MaterialTabControl materialTabControl1;
         private System.Windows.Forms.TabPage tabPage5;
-        private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.Panel panel3;
-        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;
-        private MaterialSkin.Controls.MaterialCard materialCard4;
-        private MaterialSkin.Controls.MaterialCard materialCard3;
-        private MaterialSkin.Controls.MaterialCard materialCard2;
-        private MaterialSkin.Controls.MaterialCard materialCard1;
-        private System.Windows.Forms.Panel panel2;
-        private MaterialSkin.Controls.MaterialLabel materialLabel1;
-        private System.Windows.Forms.Panel panel4;
         private System.Windows.Forms.Timer horafecha;
-        private System.Windows.Forms.Label lblFecha1;
-        private System.Windows.Forms.Label lblHora1;
-        private System.Windows.Forms.Panel panel5;
-        private System.Windows.Forms.Panel panel6;
-        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel2;
-        private MaterialSkin.Controls.MaterialCard materialCard5;
-        private MaterialSkin.Controls.MaterialCard materialCard6;
-        private MaterialSkin.Controls.MaterialCard materialCard7;
-        private MaterialSkin.Controls.MaterialCard materialCard8;
-        private MaterialSkin.Controls.MaterialLabel materialLabel2;
+        private System.Windows.Forms.ImageList imagenAdmon;
+        private System.Windows.Forms.Panel panel9;
+        private System.Windows.Forms.Panel panel18;
+        private System.Windows.Forms.Panel panelI;
+        private System.Windows.Forms.Panel panel20;
+        private FontAwesome.Sharp.IconButton iconButton9;
+        private System.Windows.Forms.Panel panel21;
+        private MaterialSkin.Controls.MaterialSwitch materialSwitch2;
+        private FontAwesome.Sharp.IconButton iconButton10;
+        private FontAwesome.Sharp.IconButton iconButton11;
+        private FontAwesome.Sharp.IconButton iconButton12;
+        private System.Windows.Forms.Panel panel22;
+        private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Panel panel8;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel3;
         private MaterialSkin.Controls.MaterialCard materialCard9;
+        private MaterialSkin.Controls.MaterialFloatingActionButton materialFloatingActionButton9;
+        private MaterialSkin.Controls.MaterialButton materialButton8;
         private MaterialSkin.Controls.MaterialCard materialCard10;
+        private MaterialSkin.Controls.MaterialFloatingActionButton materialFloatingActionButton10;
+        private MaterialSkin.Controls.MaterialButton materialButton9;
         private MaterialSkin.Controls.MaterialCard materialCard11;
+        private MaterialSkin.Controls.MaterialFloatingActionButton materialFloatingActionButton11;
+        private MaterialSkin.Controls.MaterialButton materialButton10;
         private MaterialSkin.Controls.MaterialCard materialCard12;
+        private MaterialSkin.Controls.MaterialFloatingActionButton materialFloatingActionButton12;
+        private MaterialSkin.Controls.MaterialButton materialButton11;
         private System.Windows.Forms.Panel panel7;
         private MaterialSkin.Controls.MaterialLabel materialLabel3;
-        private MaterialSkin.Controls.MaterialButton materialButton8;
-        private MaterialSkin.Controls.MaterialButton materialButton9;
-        private MaterialSkin.Controls.MaterialButton materialButton10;
-        private MaterialSkin.Controls.MaterialButton materialButton11;
+        private System.Windows.Forms.Panel panel6;
+        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel2;
+        private MaterialSkin.Controls.MaterialCard materialCard5;
+        private MaterialSkin.Controls.MaterialFloatingActionButton materialFloatingActionButton5;
         private MaterialSkin.Controls.MaterialButton materialButton5;
+        private MaterialSkin.Controls.MaterialCard materialCard6;
+        private MaterialSkin.Controls.MaterialFloatingActionButton materialFloatingActionButton6;
         private MaterialSkin.Controls.MaterialButton ENTRADAS;
+        private MaterialSkin.Controls.MaterialCard materialCard7;
+        private MaterialSkin.Controls.MaterialFloatingActionButton materialFloatingActionButton7;
         private MaterialSkin.Controls.MaterialButton materialButton6;
+        private MaterialSkin.Controls.MaterialCard materialCard8;
+        private MaterialSkin.Controls.MaterialFloatingActionButton materialFloatingActionButton8;
         private MaterialSkin.Controls.MaterialButton materialButton7;
+        private System.Windows.Forms.Panel panel5;
+        private MaterialSkin.Controls.MaterialLabel materialLabel2;
+        private System.Windows.Forms.Panel panel4;
+        private System.Windows.Forms.Label lblFecha1;
+        private System.Windows.Forms.Label lblHora1;
+        private System.Windows.Forms.Panel panel3;
+        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;
+        private MaterialSkin.Controls.MaterialCard materialCard4;
         private MaterialSkin.Controls.MaterialFloatingActionButton materialFloatingActionButton4;
         private MaterialSkin.Controls.MaterialButton materialButton4;
+        private MaterialSkin.Controls.MaterialCard materialCard3;
         private MaterialSkin.Controls.MaterialFloatingActionButton materialFloatingActionButton3;
         private MaterialSkin.Controls.MaterialButton materialButton3;
+        private MaterialSkin.Controls.MaterialCard materialCard2;
         private MaterialSkin.Controls.MaterialFloatingActionButton materialFloatingActionButton2;
         private MaterialSkin.Controls.MaterialButton materialButton2;
-        private MaterialSkin.Controls.MaterialButton materialButton1;
-        private MaterialSkin.Controls.MaterialFloatingActionButton materialFloatingActionButton9;
-        private MaterialSkin.Controls.MaterialFloatingActionButton materialFloatingActionButton10;
-        private MaterialSkin.Controls.MaterialFloatingActionButton materialFloatingActionButton11;
-        private MaterialSkin.Controls.MaterialFloatingActionButton materialFloatingActionButton12;
-        private MaterialSkin.Controls.MaterialFloatingActionButton materialFloatingActionButton5;
-        private MaterialSkin.Controls.MaterialFloatingActionButton materialFloatingActionButton6;
-        private MaterialSkin.Controls.MaterialFloatingActionButton materialFloatingActionButton7;
-        private MaterialSkin.Controls.MaterialFloatingActionButton materialFloatingActionButton8;
-        private System.Windows.Forms.ImageList imagenAdmon;
+        private MaterialSkin.Controls.MaterialCard materialCard1;
         private MaterialSkin.Controls.MaterialFloatingActionButton materialFloatingActionButton1;
-        private System.Windows.Forms.Panel panel9;
+        private MaterialSkin.Controls.MaterialButton materialButton1;
+        private System.Windows.Forms.Panel panel2;
+        private MaterialSkin.Controls.MaterialLabel materialLabel1;
+        private System.Windows.Forms.Panel panel13;
+        private System.Windows.Forms.Panel panel15;
+        private System.Windows.Forms.Panel panel16;
+        private FontAwesome.Sharp.IconButton iconButton4;
+        private FontAwesome.Sharp.IconButton iconButton5;
+        private FontAwesome.Sharp.IconButton iconButton7;
+        private System.Windows.Forms.Panel panel17;
+        private System.Windows.Forms.Panel panel19;
+        private RJCodeAdvance.RJControls.RJCircularPictureBox rjCircularPictureBox2;
+        private FontAwesome.Sharp.IconButton iconButton8;
+        private System.Windows.Forms.Panel panel23;
+        private MaterialSkin.Controls.MaterialSwitch materialSwitch1;
+        private System.Windows.Forms.Panel panel14;
+        private RJCodeAdvance.RJControls.RJCircularPictureBox rjCircularPictureBox1;
         private System.Windows.Forms.Panel panel10;
-        private MaterialSkin.Controls.MaterialSwitch themeToggle;
-        private System.Windows.Forms.Panel panel12;
+        private System.Windows.Forms.Panel panelDesktop;
         private System.Windows.Forms.Panel panelMenu;
         private FontAwesome.Sharp.IconButton iconButton1;
-        private System.Windows.Forms.Panel panel14;
-        private System.Windows.Forms.Panel panel13;
-        private System.Windows.Forms.PictureBox pictureBox1;
-        private FontAwesome.Sharp.IconButton iconButton4;
-        private FontAwesome.Sharp.IconButton iconButton3;
         private FontAwesome.Sharp.IconButton iconButton2;
+        private FontAwesome.Sharp.IconButton iconButton3;
+        private System.Windows.Forms.Panel panel24;
+        private System.Windows.Forms.Panel panel25;
+        private RJCodeAdvance.RJControls.RJCircularPictureBox rjCircularPictureBox3;
+        private FontAwesome.Sharp.IconButton iconButton6;
+        private System.Windows.Forms.Panel panel26;
+        private MaterialSkin.Controls.MaterialSwitch themeToggle;
     }
 }
