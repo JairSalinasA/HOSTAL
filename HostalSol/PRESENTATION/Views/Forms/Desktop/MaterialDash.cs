@@ -147,5 +147,17 @@ namespace PRESENTATION.Views.Forms.Dashboard
             ActivateButton(sender, RGBColors.color1);
             OpenChildForm(new Appearence());
         }
+
+        private void themeToggle_CheckedChanged(object sender, EventArgs e)
+        {
+            if (themeToggle.Checked)
+            {
+                ThemeManager.Theme = MaterialSkinManager.Themes.DARK;
+            }
+            else
+            {
+                ThemeManager.Theme = MaterialSkinManager.Themes.LIGHT;
+            }
+        }
     }
 }

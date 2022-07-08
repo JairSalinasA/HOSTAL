@@ -42,9 +42,6 @@ namespace PRESENTATION.Views.Forms.Dashboard
             this.panel17 = new System.Windows.Forms.Panel();
             this.panel19 = new System.Windows.Forms.Panel();
             this.rjCircularPictureBox2 = new RJCodeAdvance.RJControls.RJCircularPictureBox();
-            this.iconButton8 = new FontAwesome.Sharp.IconButton();
-            this.panel23 = new System.Windows.Forms.Panel();
-            this.materialSwitch1 = new MaterialSkin.Controls.MaterialSwitch();
             this.tabPage3 = new System.Windows.Forms.TabPage();
             this.panel18 = new System.Windows.Forms.Panel();
             this.panelI = new System.Windows.Forms.Panel();
@@ -55,9 +52,6 @@ namespace PRESENTATION.Views.Forms.Dashboard
             this.panel22 = new System.Windows.Forms.Panel();
             this.panel14 = new System.Windows.Forms.Panel();
             this.rjCircularPictureBox1 = new RJCodeAdvance.RJControls.RJCircularPictureBox();
-            this.iconButton9 = new FontAwesome.Sharp.IconButton();
-            this.panel21 = new System.Windows.Forms.Panel();
-            this.materialSwitch2 = new MaterialSkin.Controls.MaterialSwitch();
             this.tabPage2 = new System.Windows.Forms.TabPage();
             this.panel1 = new System.Windows.Forms.Panel();
             this.panel8 = new System.Windows.Forms.Panel();
@@ -123,9 +117,6 @@ namespace PRESENTATION.Views.Forms.Dashboard
             this.panel24 = new System.Windows.Forms.Panel();
             this.panel25 = new System.Windows.Forms.Panel();
             this.rjCircularPictureBox3 = new RJCodeAdvance.RJControls.RJCircularPictureBox();
-            this.iconButton6 = new FontAwesome.Sharp.IconButton();
-            this.panel26 = new System.Windows.Forms.Panel();
-            this.themeToggle = new MaterialSkin.Controls.MaterialSwitch();
             this.horafecha = new System.Windows.Forms.Timer(this.components);
             this.imagenAdmon = new System.Windows.Forms.ImageList(this.components);
             this.tabPage4.SuspendLayout();
@@ -133,13 +124,11 @@ namespace PRESENTATION.Views.Forms.Dashboard
             this.panel16.SuspendLayout();
             this.panel19.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.rjCircularPictureBox2)).BeginInit();
-            this.panel23.SuspendLayout();
             this.tabPage3.SuspendLayout();
             this.panel18.SuspendLayout();
             this.panel20.SuspendLayout();
             this.panel14.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.rjCircularPictureBox1)).BeginInit();
-            this.panel21.SuspendLayout();
             this.tabPage2.SuspendLayout();
             this.panel1.SuspendLayout();
             this.panel8.SuspendLayout();
@@ -171,7 +160,6 @@ namespace PRESENTATION.Views.Forms.Dashboard
             this.panelMenu.SuspendLayout();
             this.panel25.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.rjCircularPictureBox3)).BeginInit();
-            this.panel26.SuspendLayout();
             this.SuspendLayout();
             // 
             // imageList1
@@ -223,8 +211,6 @@ namespace PRESENTATION.Views.Forms.Dashboard
             this.panel16.Controls.Add(this.iconButton7);
             this.panel16.Controls.Add(this.panel17);
             this.panel16.Controls.Add(this.panel19);
-            this.panel16.Controls.Add(this.iconButton8);
-            this.panel16.Controls.Add(this.panel23);
             this.panel16.Dock = System.Windows.Forms.DockStyle.Left;
             this.panel16.Location = new System.Drawing.Point(0, 0);
             this.panel16.Name = "panel16";
@@ -329,52 +315,6 @@ namespace PRESENTATION.Views.Forms.Dashboard
             this.rjCircularPictureBox2.TabIndex = 0;
             this.rjCircularPictureBox2.TabStop = false;
             // 
-            // iconButton8
-            // 
-            this.iconButton8.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.iconButton8.FlatAppearance.BorderSize = 0;
-            this.iconButton8.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.iconButton8.ForeColor = System.Drawing.Color.Black;
-            this.iconButton8.IconChar = FontAwesome.Sharp.IconChar.Palette;
-            this.iconButton8.IconColor = System.Drawing.Color.Black;
-            this.iconButton8.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.iconButton8.IconSize = 25;
-            this.iconButton8.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.iconButton8.Location = new System.Drawing.Point(0, 595);
-            this.iconButton8.Name = "iconButton8";
-            this.iconButton8.Padding = new System.Windows.Forms.Padding(10, 0, 20, 0);
-            this.iconButton8.Size = new System.Drawing.Size(200, 40);
-            this.iconButton8.TabIndex = 8;
-            this.iconButton8.Text = "Tema Obscuro";
-            this.iconButton8.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.iconButton8.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.iconButton8.UseVisualStyleBackColor = true;
-            // 
-            // panel23
-            // 
-            this.panel23.Controls.Add(this.materialSwitch1);
-            this.panel23.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panel23.Location = new System.Drawing.Point(0, 635);
-            this.panel23.Name = "panel23";
-            this.panel23.Size = new System.Drawing.Size(200, 43);
-            this.panel23.TabIndex = 7;
-            // 
-            // materialSwitch1
-            // 
-            this.materialSwitch1.AutoSize = true;
-            this.materialSwitch1.Depth = 0;
-            this.materialSwitch1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.materialSwitch1.Location = new System.Drawing.Point(0, 0);
-            this.materialSwitch1.Margin = new System.Windows.Forms.Padding(0);
-            this.materialSwitch1.MouseLocation = new System.Drawing.Point(-1, -1);
-            this.materialSwitch1.MouseState = MaterialSkin.MouseState.HOVER;
-            this.materialSwitch1.Name = "materialSwitch1";
-            this.materialSwitch1.Ripple = true;
-            this.materialSwitch1.Size = new System.Drawing.Size(200, 43);
-            this.materialSwitch1.TabIndex = 2;
-            this.materialSwitch1.Text = "materialSwitch1";
-            this.materialSwitch1.UseVisualStyleBackColor = true;
-            // 
             // tabPage3
             // 
             this.tabPage3.Controls.Add(this.panel18);
@@ -413,8 +353,6 @@ namespace PRESENTATION.Views.Forms.Dashboard
             this.panel20.Controls.Add(this.iconButton12);
             this.panel20.Controls.Add(this.panel22);
             this.panel20.Controls.Add(this.panel14);
-            this.panel20.Controls.Add(this.iconButton9);
-            this.panel20.Controls.Add(this.panel21);
             this.panel20.Dock = System.Windows.Forms.DockStyle.Left;
             this.panel20.Location = new System.Drawing.Point(0, 0);
             this.panel20.Name = "panel20";
@@ -518,52 +456,6 @@ namespace PRESENTATION.Views.Forms.Dashboard
             this.rjCircularPictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.rjCircularPictureBox1.TabIndex = 0;
             this.rjCircularPictureBox1.TabStop = false;
-            // 
-            // iconButton9
-            // 
-            this.iconButton9.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.iconButton9.FlatAppearance.BorderSize = 0;
-            this.iconButton9.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.iconButton9.ForeColor = System.Drawing.Color.Black;
-            this.iconButton9.IconChar = FontAwesome.Sharp.IconChar.Palette;
-            this.iconButton9.IconColor = System.Drawing.Color.Black;
-            this.iconButton9.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.iconButton9.IconSize = 25;
-            this.iconButton9.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.iconButton9.Location = new System.Drawing.Point(0, 595);
-            this.iconButton9.Name = "iconButton9";
-            this.iconButton9.Padding = new System.Windows.Forms.Padding(10, 0, 20, 0);
-            this.iconButton9.Size = new System.Drawing.Size(200, 40);
-            this.iconButton9.TabIndex = 8;
-            this.iconButton9.Text = "Tema Obscuro";
-            this.iconButton9.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.iconButton9.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.iconButton9.UseVisualStyleBackColor = true;
-            // 
-            // panel21
-            // 
-            this.panel21.Controls.Add(this.materialSwitch2);
-            this.panel21.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panel21.Location = new System.Drawing.Point(0, 635);
-            this.panel21.Name = "panel21";
-            this.panel21.Size = new System.Drawing.Size(200, 43);
-            this.panel21.TabIndex = 7;
-            // 
-            // materialSwitch2
-            // 
-            this.materialSwitch2.AutoSize = true;
-            this.materialSwitch2.Depth = 0;
-            this.materialSwitch2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.materialSwitch2.Location = new System.Drawing.Point(0, 0);
-            this.materialSwitch2.Margin = new System.Windows.Forms.Padding(0);
-            this.materialSwitch2.MouseLocation = new System.Drawing.Point(-1, -1);
-            this.materialSwitch2.MouseState = MaterialSkin.MouseState.HOVER;
-            this.materialSwitch2.Name = "materialSwitch2";
-            this.materialSwitch2.Ripple = true;
-            this.materialSwitch2.Size = new System.Drawing.Size(200, 43);
-            this.materialSwitch2.TabIndex = 2;
-            this.materialSwitch2.Text = "materialSwitch1";
-            this.materialSwitch2.UseVisualStyleBackColor = true;
             // 
             // tabPage2
             // 
@@ -1401,6 +1293,7 @@ namespace PRESENTATION.Views.Forms.Dashboard
             // 
             // panel10
             // 
+            this.panel10.BackColor = System.Drawing.Color.Transparent;
             this.panel10.Controls.Add(this.panelDesktop);
             this.panel10.Controls.Add(this.panelMenu);
             this.panel10.Dock = System.Windows.Forms.DockStyle.Fill;
@@ -1411,7 +1304,7 @@ namespace PRESENTATION.Views.Forms.Dashboard
             // 
             // panelDesktop
             // 
-            this.panelDesktop.BackColor = System.Drawing.SystemColors.Control;
+            this.panelDesktop.BackColor = System.Drawing.Color.Transparent;
             this.panelDesktop.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panelDesktop.Location = new System.Drawing.Point(200, 0);
             this.panelDesktop.Name = "panelDesktop";
@@ -1426,8 +1319,6 @@ namespace PRESENTATION.Views.Forms.Dashboard
             this.panelMenu.Controls.Add(this.iconButton3);
             this.panelMenu.Controls.Add(this.panel24);
             this.panelMenu.Controls.Add(this.panel25);
-            this.panelMenu.Controls.Add(this.iconButton6);
-            this.panelMenu.Controls.Add(this.panel26);
             this.panelMenu.Dock = System.Windows.Forms.DockStyle.Left;
             this.panelMenu.Location = new System.Drawing.Point(0, 0);
             this.panelMenu.Name = "panelMenu";
@@ -1501,7 +1392,7 @@ namespace PRESENTATION.Views.Forms.Dashboard
             // 
             // panel24
             // 
-            this.panel24.BackColor = System.Drawing.Color.White;
+            this.panel24.BackColor = System.Drawing.Color.Transparent;
             this.panel24.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel24.Location = new System.Drawing.Point(0, 204);
             this.panel24.Name = "panel24";
@@ -1533,52 +1424,6 @@ namespace PRESENTATION.Views.Forms.Dashboard
             this.rjCircularPictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.rjCircularPictureBox3.TabIndex = 0;
             this.rjCircularPictureBox3.TabStop = false;
-            // 
-            // iconButton6
-            // 
-            this.iconButton6.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.iconButton6.FlatAppearance.BorderSize = 0;
-            this.iconButton6.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.iconButton6.ForeColor = System.Drawing.Color.Black;
-            this.iconButton6.IconChar = FontAwesome.Sharp.IconChar.Palette;
-            this.iconButton6.IconColor = System.Drawing.Color.Black;
-            this.iconButton6.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.iconButton6.IconSize = 25;
-            this.iconButton6.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.iconButton6.Location = new System.Drawing.Point(0, 595);
-            this.iconButton6.Name = "iconButton6";
-            this.iconButton6.Padding = new System.Windows.Forms.Padding(10, 0, 20, 0);
-            this.iconButton6.Size = new System.Drawing.Size(200, 40);
-            this.iconButton6.TabIndex = 8;
-            this.iconButton6.Text = "Tema Obscuro";
-            this.iconButton6.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.iconButton6.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.iconButton6.UseVisualStyleBackColor = true;
-            // 
-            // panel26
-            // 
-            this.panel26.Controls.Add(this.themeToggle);
-            this.panel26.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panel26.Location = new System.Drawing.Point(0, 635);
-            this.panel26.Name = "panel26";
-            this.panel26.Size = new System.Drawing.Size(200, 43);
-            this.panel26.TabIndex = 7;
-            // 
-            // themeToggle
-            // 
-            this.themeToggle.AutoSize = true;
-            this.themeToggle.Depth = 0;
-            this.themeToggle.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.themeToggle.Location = new System.Drawing.Point(0, 0);
-            this.themeToggle.Margin = new System.Windows.Forms.Padding(0);
-            this.themeToggle.MouseLocation = new System.Drawing.Point(-1, -1);
-            this.themeToggle.MouseState = MaterialSkin.MouseState.HOVER;
-            this.themeToggle.Name = "themeToggle";
-            this.themeToggle.Ripple = true;
-            this.themeToggle.Size = new System.Drawing.Size(200, 43);
-            this.themeToggle.TabIndex = 2;
-            this.themeToggle.Text = "Tema Obscuro";
-            this.themeToggle.UseVisualStyleBackColor = true;
             // 
             // horafecha
             // 
@@ -1612,15 +1457,11 @@ namespace PRESENTATION.Views.Forms.Dashboard
             this.panel16.ResumeLayout(false);
             this.panel19.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.rjCircularPictureBox2)).EndInit();
-            this.panel23.ResumeLayout(false);
-            this.panel23.PerformLayout();
             this.tabPage3.ResumeLayout(false);
             this.panel18.ResumeLayout(false);
             this.panel20.ResumeLayout(false);
             this.panel14.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.rjCircularPictureBox1)).EndInit();
-            this.panel21.ResumeLayout(false);
-            this.panel21.PerformLayout();
             this.tabPage2.ResumeLayout(false);
             this.panel1.ResumeLayout(false);
             this.panel8.ResumeLayout(false);
@@ -1668,8 +1509,6 @@ namespace PRESENTATION.Views.Forms.Dashboard
             this.panelMenu.ResumeLayout(false);
             this.panel25.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.rjCircularPictureBox3)).EndInit();
-            this.panel26.ResumeLayout(false);
-            this.panel26.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -1687,9 +1526,6 @@ namespace PRESENTATION.Views.Forms.Dashboard
         private System.Windows.Forms.Panel panel18;
         private System.Windows.Forms.Panel panelI;
         private System.Windows.Forms.Panel panel20;
-        private FontAwesome.Sharp.IconButton iconButton9;
-        private System.Windows.Forms.Panel panel21;
-        private MaterialSkin.Controls.MaterialSwitch materialSwitch2;
         private FontAwesome.Sharp.IconButton iconButton10;
         private FontAwesome.Sharp.IconButton iconButton11;
         private FontAwesome.Sharp.IconButton iconButton12;
@@ -1755,9 +1591,6 @@ namespace PRESENTATION.Views.Forms.Dashboard
         private System.Windows.Forms.Panel panel17;
         private System.Windows.Forms.Panel panel19;
         private RJCodeAdvance.RJControls.RJCircularPictureBox rjCircularPictureBox2;
-        private FontAwesome.Sharp.IconButton iconButton8;
-        private System.Windows.Forms.Panel panel23;
-        private MaterialSkin.Controls.MaterialSwitch materialSwitch1;
         private System.Windows.Forms.Panel panel14;
         private RJCodeAdvance.RJControls.RJCircularPictureBox rjCircularPictureBox1;
         private System.Windows.Forms.Panel panel10;
@@ -1769,8 +1602,5 @@ namespace PRESENTATION.Views.Forms.Dashboard
         private System.Windows.Forms.Panel panel24;
         private System.Windows.Forms.Panel panel25;
         private RJCodeAdvance.RJControls.RJCircularPictureBox rjCircularPictureBox3;
-        private FontAwesome.Sharp.IconButton iconButton6;
-        private System.Windows.Forms.Panel panel26;
-        private MaterialSkin.Controls.MaterialSwitch themeToggle;
     }
 }
