@@ -1,5 +1,4 @@
-﻿using PRESENTATION.Views.Forms;
-using PRESENTATION.Views.Forms.Dashboard;
+﻿using PRESENTATION.Views.Forms; 
 using PRESENTATION.Views.Forms.Hotel;
 using PRESENTATION.Views.Forms.Login; 
 using System;
@@ -20,7 +19,7 @@ namespace PRESENTATION
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new MaterialDash()); 
+            Application.Run(new Desktop()); 
         }
     }
 }

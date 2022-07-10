@@ -12,10 +12,10 @@ using System.Windows.Forms;
 
 namespace PRESENTATION.Views.Forms.Hotel
 {
-    public partial class Form1 : MaterialForm
+    public partial class HotelForm : MaterialForm
     {
         //readonly MaterialSkin.MaterialSkinManager materialSkinManager;
-        public Form1()
+        public HotelForm()
         {
             InitializeComponent();
             var materialSkinManager = MaterialSkinManager.Instance;

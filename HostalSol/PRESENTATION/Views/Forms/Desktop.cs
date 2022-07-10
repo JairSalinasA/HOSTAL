@@ -1,7 +1,7 @@
 ﻿using FontAwesome.Sharp;
-using MaterialSkin;
-using MaterialSkin.Controls;
-using PRESENTATION.Views.Forms.Configuracion;
+using PRESENTATION.Views.Forms.Dashboard;
+using PRESENTATION.Views.Forms.Hotel;
+using PRESENTATION.Views.Forms.Inventario;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -12,66 +12,39 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace PRESENTATION.Views.Forms.Dashboard
+namespace PRESENTATION.Views.Forms
 {
-
-    public partial class MaterialDash : MaterialForm
+    public partial class Desktop : Form
     {
-        //readonly MaterialSkin.MaterialSkinManager materialSkinManager;
-
         //Fields
         private IconButton currentBtn;
         private Panel leftBorderBtn;
         private Form currentChildForm;
 
-
-        public MaterialDash()
+        public Desktop()
         {
             InitializeComponent();
 
-            //CONFIGURACION MATERIAL SKIN
-            var materialSkinManager = MaterialSkinManager.Instance;
-            materialSkinManager.AddFormToManage(this);
-            materialSkinManager.Theme = MaterialSkinManager.Themes.LIGHT;
-            materialSkinManager.ColorScheme = new ColorScheme(Primary.Indigo500, Primary.Indigo700, Primary.Blue900, Accent.Blue700,TextShade.WHITE);
-
-            //CONFIGURACION BOTONES
             leftBorderBtn = new Panel();
-            leftBorderBtn.Size = new Size(7, 40);  
+            leftBorderBtn.Size = new Size(7, 60);
             panelMenu.Controls.Add(leftBorderBtn);
         }
-
-        MaterialSkinManager ThemeManager = MaterialSkinManager.Instance;
+        private void horafecha_Tick_1(object sender, EventArgs e)
+        {
+            label1.Text = DateTime.Now.ToString("HH:mm:ss");
+            label2.Text = DateTime.Now.ToLongDateString();
+        }
 
         //Structs
         private struct RGBColors
         {
-            public static Color color1 = Color.FromArgb(115, 152, 255); 
-            public static Color color2 = Color.FromArgb(115, 152, 255);
+            public static Color color1 = Color.FromArgb(172, 126, 241);
+            public static Color color2 = Color.FromArgb(249, 118, 176);
             public static Color color3 = Color.FromArgb(253, 138, 114);
             public static Color color4 = Color.FromArgb(95, 77, 221);
             public static Color color5 = Color.FromArgb(249, 88, 155);
             public static Color color6 = Color.FromArgb(24, 161, 251);
         }
-
-        private void horafecha_Tick(object sender, EventArgs e)
-        {
-            lblHora1.Text = DateTime.Now.ToString("HH:mm:ss");
-            lblFecha1.Text = DateTime.Now.ToShortDateString();
-        }
-
-        private void themeToggle_CheckedChanged_1(object sender, EventArgs e)
-        {
-            if (themeToggle.Checked)
-            {
-                ThemeManager.Theme = MaterialSkinManager.Themes.DARK;
-            }
-            else
-            {
-                ThemeManager.Theme = MaterialSkinManager.Themes.LIGHT;
-            }
-        }
-
         //Methods
         private void ActivateButton(object senderBtn, Color color)
         {
@@ -80,7 +53,7 @@ namespace PRESENTATION.Views.Forms.Dashboard
                 DisableButton();
                 //Button
                 currentBtn = (IconButton)senderBtn;
-                currentBtn.BackColor = Color.FromArgb(240, 240, 240);
+                currentBtn.BackColor = Color.FromArgb(37, 36, 81);
                 currentBtn.ForeColor = color;
                 currentBtn.TextAlign = ContentAlignment.MiddleCenter;
                 currentBtn.IconColor = color;
@@ -100,15 +73,14 @@ namespace PRESENTATION.Views.Forms.Dashboard
         {
             if (currentBtn != null)
             {
-                currentBtn.BackColor = Color.FromArgb(240, 240, 240);
-                currentBtn.ForeColor = Color.Black;
+                currentBtn.BackColor = Color.FromArgb(31, 30, 68);
+                currentBtn.ForeColor = Color.Gainsboro;
                 currentBtn.TextAlign = ContentAlignment.MiddleLeft;
-                currentBtn.IconColor = Color.Black;
+                currentBtn.IconColor = Color.Gainsboro;
                 currentBtn.TextImageRelation = TextImageRelation.ImageBeforeText;
                 currentBtn.ImageAlign = ContentAlignment.MiddleLeft;
             }
         }
-
         private void OpenChildForm(Form childForm)
         {
             //open only form
@@ -131,33 +103,41 @@ namespace PRESENTATION.Views.Forms.Dashboard
         {
             DisableButton();
             leftBorderBtn.Visible = false;
-           // iconCurrentChildForm.IconChar = IconChar.Home;
-           //iconCurrentChildForm.IconColor = Color.MediumPurple;
+            //iconCurrentChildForm.IconChar = IconChar.Home;
+            //iconCurrentChildForm.IconColor = Color.MediumPurple;
             //lblTitleChildForm.Text = "Home";
-        } 
+        }
+        private void btnHome_Click(object sender, EventArgs e)
+        {
+            if (currentChildForm != null)
+            {
+                currentChildForm.Close();
+            }
+            Reset();
+        }
 
         private void iconButton3_Click(object sender, EventArgs e)
         {
             ActivateButton(sender, RGBColors.color1);
-            OpenChildForm(new Account());
-        }
+            OpenChildForm(new DashBoard());
+        }       
 
-        private void iconButton2_Click_1(object sender, EventArgs e)
+        private void btnHotel_Click(object sender, EventArgs e)
         {
             ActivateButton(sender, RGBColors.color1);
-            OpenChildForm(new Appearence());
+            OpenChildForm(new HotelForm());
         }
 
-        private void themeToggle_CheckedChanged(object sender, EventArgs e)
+        private void iconButton5_Click(object sender, EventArgs e)
         {
-            if (themeToggle.Checked)
-            {
-                ThemeManager.Theme = MaterialSkinManager.Themes.DARK;
-            }
-            else
-            {
-                ThemeManager.Theme = MaterialSkinManager.Themes.LIGHT;
-            }
+            ActivateButton(sender, RGBColors.color1);
+            OpenChildForm(new IneventarioForm());
+        }
+
+        private void iconButton4_Click(object sender, EventArgs e)
+        {
+            ActivateButton(sender, RGBColors.color1);
+            OpenChildForm(new PuntoVentaForm());
         }
     }
 }

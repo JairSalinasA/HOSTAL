@@ -8,11 +8,11 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace PRESENTATION.Views.Forms.Users
+namespace PRESENTATION.Views.Forms
 {
-    public partial class formUsers : Form
+    public partial class PuntoVentaForm : Form
     {
-        public formUsers()
+        public PuntoVentaForm()
         {
             InitializeComponent();
         }

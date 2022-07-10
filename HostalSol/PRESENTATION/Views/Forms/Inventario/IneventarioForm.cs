@@ -8,11 +8,11 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace PRESENTATION.Views.Forms.Configuracion
+namespace PRESENTATION.Views.Forms.Inventario
 {
-    public partial class Appearence : Form
+    public partial class IneventarioForm : Form
     {
-        public Appearence()
+        public IneventarioForm()
         {
             InitializeComponent();
         }

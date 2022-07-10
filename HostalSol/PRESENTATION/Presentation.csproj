@@ -69,29 +69,29 @@
   <ItemGroup>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Views\Forms\Configuracion\Account.cs">
+    <Compile Include="Views\Forms\Dashboard\DashBoard.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Views\Forms\Configuracion\Account.Designer.cs">
-      <DependentUpon>Account.cs</DependentUpon>
+    <Compile Include="Views\Forms\Dashboard\DashBoard.Designer.cs">
+      <DependentUpon>DashBoard.cs</DependentUpon>
     </Compile>
-    <Compile Include="Views\Forms\Configuracion\Appearence.cs">
+    <Compile Include="Views\Forms\Desktop.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Views\Forms\Configuracion\Appearence.Designer.cs">
-      <DependentUpon>Appearence.cs</DependentUpon>
+    <Compile Include="Views\Forms\Desktop.Designer.cs">
+      <DependentUpon>Desktop.cs</DependentUpon>
     </Compile>
-    <Compile Include="Views\Forms\Desktop\MaterialDash.cs">
+    <Compile Include="Views\Forms\Hotel\HotelForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Views\Forms\Desktop\MaterialDash.Designer.cs">
-      <DependentUpon>MaterialDash.cs</DependentUpon>
+    <Compile Include="Views\Forms\Hotel\HotelForm.Designer.cs">
+      <DependentUpon>HotelForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="Views\Forms\Hotel\Form1.cs">
+    <Compile Include="Views\Forms\Inventario\IneventarioForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Views\Forms\Hotel\Form1.Designer.cs">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <Compile Include="Views\Forms\Inventario\IneventarioForm.Designer.cs">
+      <DependentUpon>IneventarioForm.cs</DependentUpon>
     </Compile>
     <Compile Include="Views\Forms\Login\Login.cs">
       <SubType>Form</SubType>
@@ -99,11 +99,11 @@
     <Compile Include="Views\Forms\Login\Login.Designer.cs">
       <DependentUpon>Login.cs</DependentUpon>
     </Compile>
-    <Compile Include="Views\Forms\Configuracion\Users.cs">
+    <Compile Include="Views\Forms\PuntoVenta\PuntoVentaForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Views\Forms\Configuracion\Users.Designer.cs">
-      <DependentUpon>Users.cs</DependentUpon>
+    <Compile Include="Views\Forms\PuntoVenta\PuntoVentaForm.Designer.cs">
+      <DependentUpon>PuntoVentaForm.cs</DependentUpon>
     </Compile>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -115,23 +115,20 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
-    <EmbeddedResource Include="Views\Forms\Configuracion\Account.resx">
-      <DependentUpon>Account.cs</DependentUpon>
+    <EmbeddedResource Include="Views\Forms\Dashboard\DashBoard.resx">
+      <DependentUpon>DashBoard.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Views\Forms\Configuracion\Appearence.resx">
-      <DependentUpon>Appearence.cs</DependentUpon>
+    <EmbeddedResource Include="Views\Forms\Desktop.resx">
+      <DependentUpon>Desktop.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Views\Forms\Desktop\MaterialDash.resx">
-      <DependentUpon>MaterialDash.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Views\Forms\Hotel\Form1.resx">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <EmbeddedResource Include="Views\Forms\Hotel\HotelForm.resx">
+      <DependentUpon>HotelForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Views\Forms\Login\Login.resx">
       <DependentUpon>Login.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Views\Forms\Configuracion\Users.resx">
-      <DependentUpon>Users.cs</DependentUpon>
+    <EmbeddedResource Include="Views\Forms\PuntoVenta\PuntoVentaForm.resx">
+      <DependentUpon>PuntoVentaForm.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
@@ -150,9 +147,6 @@
   <ItemGroup>
     <Folder Include="Helpers\" />
     <Folder Include="ViewModels\" />
-    <Folder Include="Views\Forms\Dashboard\" />
-    <Folder Include="Views\Forms\Inventory\" />
-    <Folder Include="Views\Forms\POS\" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\DOMAIN\Domain.csproj">
