@@ -28,7 +28,7 @@ namespace PRESENTATION.Views.Forms
 
             leftBorderBtn = new Panel();
             leftBorderBtn.Size = new Size(7, 60);
-            panelM.Controls.Add(leftBorderBtn);
+            panelMenu.Controls.Add(leftBorderBtn);
         }
 
 
@@ -141,14 +141,14 @@ namespace PRESENTATION.Views.Forms
 
         private void iconButton1_Click(object sender, EventArgs e)
         {
-            if (panelM.Width==200)
+            if (panelMenu.Width==200)
             {
                 //Replace image 
                 btnHome.Image = Image.FromFile(@"C:\Users\mokey\Desktop\HOSTAL\HostalSol\PRESENTATION\Images\m.PNG");
                 this.btnHome.Size = new System.Drawing.Size(50, 50);
 
                 // remove name of buttons
-                panelM.Width = 50;
+                panelMenu.Width = 50;
                 btnDashboard.Text = "";
                 btnHotel.Text = "";
                 btnInventario.Text = "";
@@ -163,7 +163,7 @@ namespace PRESENTATION.Views.Forms
             }
             else
             {
-                panelM.Width = 200;
+                panelMenu.Width = 200;
                 //Replace image 
                 btnHome.Image = Image.FromFile(@"C:\Users\mokey\Desktop\HOSTAL\HostalSol\PRESENTATION\Images\m.PNG");
                 this.btnHome.Size = new System.Drawing.Size(200,200);
@@ -178,12 +178,12 @@ namespace PRESENTATION.Views.Forms
         private void CambiarColores(string Tema)
         {
             Temas.ElegirTema(Tema);
-            panelM.BackColor = Temas.panelMenu; 
+            panelMenu.BackColor = Temas.panelMenu; 
             panelBuscar.BackColor = Temas.panelBuscar;
             panelDesktop.BackColor = Temas.panelDesktop;
             btnDashboard.ForeColor = Temas.fuenteA;
 
-            foreach (IconButton item in panel1.Controls)
+            foreach (IconButton item in panelMenu.Controls)
             {
                 item.ForeColor = Temas.fuenteB;
                 item.IconColor = Temas.fuenteB;
@@ -194,34 +194,36 @@ namespace PRESENTATION.Views.Forms
 
         private void Desktop_Load(object sender, EventArgs e)
         {
-            if (Properties.Settings.Default.Tema != "")
-            {
-                CambiarColores(Properties.Settings.Default.Tema);
+            //if (Properties.Settings.Default.Tema != "")
+            //{
+            //    CambiarColores(Properties.Settings.Default.Tema);
 
-            }
-            else
-            {
-                CambiarColores("Claro");
-            }
+            //}
+            //else
+            //{
+            //    CambiarColores("Claro");
+            //}
 
         }
 
-        private void rjToggleButton1_CheckedChanged(object sender, EventArgs e)
-        {
+        //private void rjToggleButton1_CheckedChanged(object sender, EventArgs e)
+        //{
 
-            if (rjToggleButton1.Checked)
-            {
-                Properties.Settings.Default.Tema = "Obscuro";
-                Properties.Settings.Default.Save();
-                CambiarColores(Properties.Settings.Default.Tema);
-            }
-            else
-            {
-                Properties.Settings.Default.Tema = "Claro";
-                Properties.Settings.Default.Save();
-                CambiarColores(Properties.Settings.Default.Tema);
-            }
+        //    if (rjToggleButton1.Checked)
+        //    {
+        //        Properties.Settings.Default.Tema = "Claro";
+        //        //Properties.Settings.Default.Tema = "Obscuro";
+        //        Properties.Settings.Default.Save();
+        //        CambiarColores(Properties.Settings.Default.Tema);
+        //    }
+        //    else
+        //    {
+        //        //Properties.Settings.Default.Tema = "Claro";
+        //        Properties.Settings.Default.Tema = "Obscuro";
+        //        Properties.Settings.Default.Save();
+        //        CambiarColores(Properties.Settings.Default.Tema);
+        //    }
            
-        }
+        //}
     }
 }

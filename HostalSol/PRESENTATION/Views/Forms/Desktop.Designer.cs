@@ -30,7 +30,6 @@ namespace PRESENTATION.Views.Forms
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Desktop));
-            this.panelM = new System.Windows.Forms.Panel();
             this.panelBuscar = new System.Windows.Forms.Panel();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.rjTextBox1 = new RJCodeAdvance.RJControls.RJTextBox();
@@ -42,33 +41,16 @@ namespace PRESENTATION.Views.Forms
             this.btnHotel = new FontAwesome.Sharp.IconButton();
             this.btnDashboard = new FontAwesome.Sharp.IconButton();
             this.btnHome = new System.Windows.Forms.PictureBox();
-            this.panel3 = new System.Windows.Forms.Panel();
+            this.panelMenu = new System.Windows.Forms.Panel();
             this.panel4 = new System.Windows.Forms.Panel();
             this.panelDesktop = new System.Windows.Forms.Panel();
-            this.panel1 = new System.Windows.Forms.Panel();
-            this.panel2 = new System.Windows.Forms.Panel();
-            this.rjToggleButton1 = new RJCodeAdvance.RJControls.RJToggleButton();
-            this.label1 = new System.Windows.Forms.Label();
-            this.panelM.SuspendLayout();
             this.panelBuscar.SuspendLayout();
             this.tableLayoutPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.rjCircularPictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnHome)).BeginInit();
-            this.panel3.SuspendLayout();
+            this.panelMenu.SuspendLayout();
             this.panel4.SuspendLayout();
-            this.panel1.SuspendLayout();
-            this.panel2.SuspendLayout();
             this.SuspendLayout();
-            // 
-            // panelM
-            // 
-            this.panelM.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(4)))), ((int)(((byte)(5)))), ((int)(((byte)(20)))));
-            this.panelM.Controls.Add(this.panel1);
-            this.panelM.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panelM.Location = new System.Drawing.Point(0, 177);
-            this.panelM.Name = "panelM";
-            this.panelM.Size = new System.Drawing.Size(200, 790);
-            this.panelM.TabIndex = 0;
             // 
             // panelBuscar
             // 
@@ -189,7 +171,7 @@ namespace PRESENTATION.Views.Forms
             this.btnpos.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.btnpos.IconSize = 30;
             this.btnpos.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnpos.Location = new System.Drawing.Point(0, 180);
+            this.btnpos.Location = new System.Drawing.Point(0, 357);
             this.btnpos.Name = "btnpos";
             this.btnpos.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
             this.btnpos.Size = new System.Drawing.Size(200, 60);
@@ -212,7 +194,7 @@ namespace PRESENTATION.Views.Forms
             this.btnInventario.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.btnInventario.IconSize = 30;
             this.btnInventario.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnInventario.Location = new System.Drawing.Point(0, 120);
+            this.btnInventario.Location = new System.Drawing.Point(0, 237);
             this.btnInventario.Name = "btnInventario";
             this.btnInventario.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
             this.btnInventario.Size = new System.Drawing.Size(200, 60);
@@ -235,7 +217,7 @@ namespace PRESENTATION.Views.Forms
             this.btnHotel.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.btnHotel.IconSize = 30;
             this.btnHotel.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnHotel.Location = new System.Drawing.Point(0, 60);
+            this.btnHotel.Location = new System.Drawing.Point(0, 297);
             this.btnHotel.Name = "btnHotel";
             this.btnHotel.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
             this.btnHotel.Size = new System.Drawing.Size(200, 60);
@@ -258,7 +240,7 @@ namespace PRESENTATION.Views.Forms
             this.btnDashboard.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.btnDashboard.IconSize = 30;
             this.btnDashboard.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnDashboard.Location = new System.Drawing.Point(0, 0);
+            this.btnDashboard.Location = new System.Drawing.Point(0, 177);
             this.btnDashboard.Name = "btnDashboard";
             this.btnDashboard.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
             this.btnDashboard.Size = new System.Drawing.Size(200, 60);
@@ -281,16 +263,19 @@ namespace PRESENTATION.Views.Forms
             this.btnHome.TabStop = false;
             this.btnHome.Click += new System.EventHandler(this.btnHome_Click);
             // 
-            // panel3
+            // panelMenu
             // 
-            this.panel3.Controls.Add(this.panel2);
-            this.panel3.Controls.Add(this.panelM);
-            this.panel3.Controls.Add(this.panel4);
-            this.panel3.Dock = System.Windows.Forms.DockStyle.Left;
-            this.panel3.Location = new System.Drawing.Point(0, 0);
-            this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(200, 1064);
-            this.panel3.TabIndex = 3;
+            this.panelMenu.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(4)))), ((int)(((byte)(5)))), ((int)(((byte)(20)))));
+            this.panelMenu.Controls.Add(this.btnpos);
+            this.panelMenu.Controls.Add(this.btnHotel);
+            this.panelMenu.Controls.Add(this.btnInventario);
+            this.panelMenu.Controls.Add(this.btnDashboard);
+            this.panelMenu.Controls.Add(this.panel4);
+            this.panelMenu.Dock = System.Windows.Forms.DockStyle.Left;
+            this.panelMenu.Location = new System.Drawing.Point(0, 0);
+            this.panelMenu.Name = "panelMenu";
+            this.panelMenu.Size = new System.Drawing.Size(200, 1064);
+            this.panelMenu.TabIndex = 3;
             // 
             // panel4
             // 
@@ -310,54 +295,6 @@ namespace PRESENTATION.Views.Forms
             this.panelDesktop.Size = new System.Drawing.Size(1080, 1007);
             this.panelDesktop.TabIndex = 4;
             // 
-            // panel1
-            // 
-            this.panel1.Controls.Add(this.btnpos);
-            this.panel1.Controls.Add(this.btnInventario);
-            this.panel1.Controls.Add(this.btnHotel);
-            this.panel1.Controls.Add(this.btnDashboard);
-            this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel1.Location = new System.Drawing.Point(0, 0);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(200, 790);
-            this.panel1.TabIndex = 0;
-            // 
-            // panel2
-            // 
-            this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(4)))), ((int)(((byte)(5)))), ((int)(((byte)(20)))));
-            this.panel2.Controls.Add(this.rjToggleButton1);
-            this.panel2.Controls.Add(this.label1);
-            this.panel2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel2.Location = new System.Drawing.Point(0, 967);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(200, 97);
-            this.panel2.TabIndex = 8;
-            // 
-            // rjToggleButton1
-            // 
-            this.rjToggleButton1.AutoSize = true;
-            this.rjToggleButton1.Location = new System.Drawing.Point(132, 15);
-            this.rjToggleButton1.MinimumSize = new System.Drawing.Size(45, 22);
-            this.rjToggleButton1.Name = "rjToggleButton1";
-            this.rjToggleButton1.OffBackColor = System.Drawing.Color.Gray;
-            this.rjToggleButton1.OffToggleColor = System.Drawing.Color.Gainsboro;
-            this.rjToggleButton1.OnBackColor = System.Drawing.Color.MediumSlateBlue;
-            this.rjToggleButton1.OnToggleColor = System.Drawing.Color.WhiteSmoke;
-            this.rjToggleButton1.Size = new System.Drawing.Size(45, 22);
-            this.rjToggleButton1.TabIndex = 1;
-            this.rjToggleButton1.UseVisualStyleBackColor = true;
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.Gainsboro;
-            this.label1.Location = new System.Drawing.Point(12, 15);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(113, 20);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "Tema Obscuro";
-            // 
             // Desktop
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -365,29 +302,23 @@ namespace PRESENTATION.Views.Forms
             this.ClientSize = new System.Drawing.Size(1280, 1064);
             this.Controls.Add(this.panelDesktop);
             this.Controls.Add(this.panelBuscar);
-            this.Controls.Add(this.panel3);
+            this.Controls.Add(this.panelMenu);
             this.Name = "Desktop";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "DashBoard";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.Load += new System.EventHandler(this.Desktop_Load);
-            this.panelM.ResumeLayout(false);
             this.panelBuscar.ResumeLayout(false);
             this.tableLayoutPanel1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.rjCircularPictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnHome)).EndInit();
-            this.panel3.ResumeLayout(false);
+            this.panelMenu.ResumeLayout(false);
             this.panel4.ResumeLayout(false);
-            this.panel1.ResumeLayout(false);
-            this.panel2.ResumeLayout(false);
-            this.panel2.PerformLayout();
             this.ResumeLayout(false);
 
         }
 
         #endregion
-
-        private System.Windows.Forms.Panel panelM;
         private System.Windows.Forms.PictureBox btnHome;
         private System.Windows.Forms.Panel panelBuscar;
         private FontAwesome.Sharp.IconButton iconButton1;
@@ -399,12 +330,8 @@ namespace PRESENTATION.Views.Forms
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;
         private FontAwesome.Sharp.IconButton iconButton6;
         private RJCodeAdvance.RJControls.RJTextBox rjTextBox1;
-        private System.Windows.Forms.Panel panel3;
+        private System.Windows.Forms.Panel panelMenu;
         private System.Windows.Forms.Panel panel4;
         private System.Windows.Forms.Panel panelDesktop;
-        private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.Panel panel2;
-        private RJCodeAdvance.RJControls.RJToggleButton rjToggleButton1;
-        private System.Windows.Forms.Label label1;
     }
 }
