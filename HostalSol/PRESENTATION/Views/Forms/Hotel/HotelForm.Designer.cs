@@ -31,19 +31,16 @@ namespace PRESENTATION.Views.Forms.Hotel
         {
             this.SuspendLayout();
             // 
-            // Form1
+            // HotelForm
             // 
-            this.ClientSize = new System.Drawing.Size(934, 567);
-            this.Name = "Form1";
-            this.Sizable = false;
-            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "USUARIOS";
-            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
-            this.Load += new System.EventHandler(this.Form1_Load);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.ClientSize = new System.Drawing.Size(1064, 968);
+            this.Name = "HotelForm";
+            this.Text = "HotelForm";
             this.ResumeLayout(false);
 
         }
-
 
         #endregion
     }

@@ -1,4 +1,5 @@
 ﻿using FontAwesome.Sharp;
+using PRESENTATION.Helpers;
 using PRESENTATION.Views.Forms.Dashboard;
 using PRESENTATION.Views.Forms.Hotel;
 using PRESENTATION.Views.Forms.Inventario;
@@ -27,18 +28,15 @@ namespace PRESENTATION.Views.Forms
 
             leftBorderBtn = new Panel();
             leftBorderBtn.Size = new Size(7, 60);
-            panelMenu.Controls.Add(leftBorderBtn);
-        }
-        private void horafecha_Tick_1(object sender, EventArgs e)
-        {
-            label1.Text = DateTime.Now.ToString("HH:mm:ss");
-            label2.Text = DateTime.Now.ToLongDateString();
+            panelM.Controls.Add(leftBorderBtn);
         }
 
-        //Structs
+
+        //Structs 63, 65, 89  --241, 202, 136
         private struct RGBColors
         {
-            public static Color color1 = Color.FromArgb(172, 126, 241);
+            //public static Color color1 = Color.FromArgb(172, 126, 241);
+            public static Color color1 = Color.FromArgb(241, 202, 136);
             public static Color color2 = Color.FromArgb(249, 118, 176);
             public static Color color3 = Color.FromArgb(253, 138, 114);
             public static Color color4 = Color.FromArgb(95, 77, 221);
@@ -53,7 +51,7 @@ namespace PRESENTATION.Views.Forms
                 DisableButton();
                 //Button
                 currentBtn = (IconButton)senderBtn;
-                currentBtn.BackColor = Color.FromArgb(37, 36, 81);
+                currentBtn.BackColor = Color.FromArgb(63, 65, 89);
                 currentBtn.ForeColor = color;
                 currentBtn.TextAlign = ContentAlignment.MiddleCenter;
                 currentBtn.IconColor = color;
@@ -63,7 +61,8 @@ namespace PRESENTATION.Views.Forms
                 leftBorderBtn.BackColor = color;
                 leftBorderBtn.Location = new Point(0, currentBtn.Location.Y);
                 leftBorderBtn.Visible = true;
-                leftBorderBtn.BringToFront();
+                leftBorderBtn.Padding = new Padding(10); 
+                leftBorderBtn.BringToFront();                
                 //Current Child Form Icon
                 //iconCurrentChildForm.IconChar = currentBtn.IconChar;
                 //iconCurrentChildForm.IconColor = color;
@@ -73,7 +72,7 @@ namespace PRESENTATION.Views.Forms
         {
             if (currentBtn != null)
             {
-                currentBtn.BackColor = Color.FromArgb(31, 30, 68);
+                currentBtn.BackColor = Color.FromArgb(4, 5, 20);
                 currentBtn.ForeColor = Color.Gainsboro;
                 currentBtn.TextAlign = ContentAlignment.MiddleLeft;
                 currentBtn.IconColor = Color.Gainsboro;
@@ -138,6 +137,91 @@ namespace PRESENTATION.Views.Forms
         {
             ActivateButton(sender, RGBColors.color1);
             OpenChildForm(new PuntoVentaForm());
+        }
+
+        private void iconButton1_Click(object sender, EventArgs e)
+        {
+            if (panelM.Width==200)
+            {
+                //Replace image 
+                btnHome.Image = Image.FromFile(@"C:\Users\mokey\Desktop\HOSTAL\HostalSol\PRESENTATION\Images\m.PNG");
+                this.btnHome.Size = new System.Drawing.Size(50, 50);
+
+                // remove name of buttons
+                panelM.Width = 50;
+                btnDashboard.Text = "";
+                btnHotel.Text = "";
+                btnInventario.Text = "";
+                btnpos.Text = "";
+
+                // add tolptip button
+                ToolTip toolTip1 = new ToolTip();
+                toolTip1.SetToolTip(this.btnDashboard, "Dashboard");
+                toolTip1.SetToolTip(this.btnHotel, "Administracion Hotelera");
+                toolTip1.SetToolTip(this.btnInventario, "Administracion de Inventario");
+                toolTip1.SetToolTip(this.btnpos, "Punto de venta");
+            }
+            else
+            {
+                panelM.Width = 200;
+                //Replace image 
+                btnHome.Image = Image.FromFile(@"C:\Users\mokey\Desktop\HOSTAL\HostalSol\PRESENTATION\Images\m.PNG");
+                this.btnHome.Size = new System.Drawing.Size(200,200);
+
+                btnDashboard.Text = "Dashboard";
+                btnHotel.Text = "Admin Hotel";
+                btnInventario.Text = "Admin Inventario";
+                btnpos.Text = "Punto de venta";
+            }
+        }
+
+        private void CambiarColores(string Tema)
+        {
+            Temas.ElegirTema(Tema);
+            panelM.BackColor = Temas.panelMenu; 
+            panelBuscar.BackColor = Temas.panelBuscar;
+            panelDesktop.BackColor = Temas.panelDesktop;
+            btnDashboard.ForeColor = Temas.fuenteA;
+
+            foreach (IconButton item in panel1.Controls)
+            {
+                item.ForeColor = Temas.fuenteB;
+                item.IconColor = Temas.fuenteB;
+            }
+
+
+        }
+
+        private void Desktop_Load(object sender, EventArgs e)
+        {
+            if (Properties.Settings.Default.Tema != "")
+            {
+                CambiarColores(Properties.Settings.Default.Tema);
+
+            }
+            else
+            {
+                CambiarColores("Claro");
+            }
+
+        }
+
+        private void rjToggleButton1_CheckedChanged(object sender, EventArgs e)
+        {
+
+            if (rjToggleButton1.Checked)
+            {
+                Properties.Settings.Default.Tema = "Obscuro";
+                Properties.Settings.Default.Save();
+                CambiarColores(Properties.Settings.Default.Tema);
+            }
+            else
+            {
+                Properties.Settings.Default.Tema = "Claro";
+                Properties.Settings.Default.Save();
+                CambiarColores(Properties.Settings.Default.Tema);
+            }
+           
         }
     }
 }
