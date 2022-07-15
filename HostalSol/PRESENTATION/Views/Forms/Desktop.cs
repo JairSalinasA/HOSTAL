@@ -124,7 +124,7 @@ namespace PRESENTATION.Views.Forms
         private void btnHotel_Click(object sender, EventArgs e)
         {
             ActivateButton(sender, RGBColors.color1);
-            OpenChildForm(new HotelForm());
+            OpenChildForm(new DasboardHotelForm());
         }
 
         private void iconButton5_Click(object sender, EventArgs e)

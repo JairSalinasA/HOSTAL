@@ -82,11 +82,11 @@
     <Compile Include="Views\Forms\Desktop.Designer.cs">
       <DependentUpon>Desktop.cs</DependentUpon>
     </Compile>
-    <Compile Include="Views\Forms\Hotel\HotelForm.cs">
+    <Compile Include="Views\Forms\Hotel\DasboardHotelForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Views\Forms\Hotel\HotelForm.Designer.cs">
-      <DependentUpon>HotelForm.cs</DependentUpon>
+    <Compile Include="Views\Forms\Hotel\DasboardHotelForm.Designer.cs">
+      <DependentUpon>DasboardHotelForm.cs</DependentUpon>
     </Compile>
     <Compile Include="Views\Forms\Inventario\IneventarioForm.cs">
       <SubType>Form</SubType>
@@ -99,6 +99,12 @@
     </Compile>
     <Compile Include="Views\Forms\Login\Login.Designer.cs">
       <DependentUpon>Login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Forms\PuntoVenta\HTRABAJOS\CajaForms.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\Forms\PuntoVenta\HTRABAJOS\CajaForms.Designer.cs">
+      <DependentUpon>CajaForms.cs</DependentUpon>
     </Compile>
     <Compile Include="Views\Forms\PuntoVenta\PuntoVentaForm.cs">
       <SubType>Form</SubType>
@@ -122,11 +128,17 @@
     <EmbeddedResource Include="Views\Forms\Desktop.resx">
       <DependentUpon>Desktop.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Views\Forms\Hotel\HotelForm.resx">
-      <DependentUpon>HotelForm.cs</DependentUpon>
+    <EmbeddedResource Include="Views\Forms\Hotel\DasboardHotelForm.resx">
+      <DependentUpon>DasboardHotelForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\Forms\Inventario\IneventarioForm.resx">
+      <DependentUpon>IneventarioForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Views\Forms\Login\Login.resx">
       <DependentUpon>Login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\Forms\PuntoVenta\HTRABAJOS\CajaForms.resx">
+      <DependentUpon>CajaForms.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Views\Forms\PuntoVenta\PuntoVentaForm.resx">
       <DependentUpon>PuntoVentaForm.cs</DependentUpon>
