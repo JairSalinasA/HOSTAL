@@ -102,42 +102,42 @@ namespace PRESENTATION.Views.Forms
         private void iconButton2_Click(object sender, EventArgs e)
         {
             ActivateButton(sender, RGBColors.color1);
-            OpenChildForm(new CajaForms());
+            OpenChildForm(new ProductosForms());
             leftBorderBtn.Visible = false;
         }
 
         private void iconButton3_Click(object sender, EventArgs e)
         {
             ActivateButton(sender, RGBColors.color1);
-            OpenChildForm(new CajaForms());
+            OpenChildForm(new ProductosForms());
             leftBorderBtn.Visible = false;
         }
 
         private void iconButton4_Click(object sender, EventArgs e)
         {
             ActivateButton(sender, RGBColors.color1);
-            OpenChildForm(new CajaForms());
+            OpenChildForm(new ProductosForms());
             leftBorderBtn.Visible = false;
         }
 
         private void iconButton5_Click(object sender, EventArgs e)
         {
             ActivateButton(sender, RGBColors.color1);
-            OpenChildForm(new CajaForms());
+            OpenChildForm(new ProductosForms());
             leftBorderBtn.Visible = false;
         }
 
         private void iconButton6_Click(object sender, EventArgs e)
         {
             ActivateButton(sender, RGBColors.color1);
-            OpenChildForm(new CajaForms());
+            OpenChildForm(new ProductosForms());
             leftBorderBtn.Visible = false;
         }
 
         private void iconButton7_Click(object sender, EventArgs e)
         {
             ActivateButton(sender, RGBColors.color1);
-            OpenChildForm(new CajaForms());
+            OpenChildForm(new ProductosForms());
             leftBorderBtn.Visible = false;
         }
     }
