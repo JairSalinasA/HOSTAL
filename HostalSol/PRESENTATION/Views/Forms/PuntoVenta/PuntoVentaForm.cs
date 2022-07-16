@@ -109,7 +109,7 @@ namespace PRESENTATION.Views.Forms
         private void iconButton3_Click(object sender, EventArgs e)
         {
             ActivateButton(sender, RGBColors.color1);
-            OpenChildForm(new AlmacenForms());
+            OpenChildForm(new ProveedoresForms());
             leftBorderBtn.Visible = false;
         }
 
@@ -123,7 +123,7 @@ namespace PRESENTATION.Views.Forms
         private void iconButton5_Click(object sender, EventArgs e)
         {
             ActivateButton(sender, RGBColors.color1);
-            OpenChildForm(new AlmacenForms());
+            OpenChildForm(new ComprasForms());
             leftBorderBtn.Visible = false;
         }
 
@@ -137,7 +137,14 @@ namespace PRESENTATION.Views.Forms
         private void iconButton7_Click(object sender, EventArgs e)
         {
             ActivateButton(sender, RGBColors.color1);
-            OpenChildForm(new AlmacenForms());
+            OpenChildForm(new DepartamentoForms());
+            leftBorderBtn.Visible = false;
+        }
+
+        private void iconButton8_Click(object sender, EventArgs e)
+        {
+            ActivateButton(sender, RGBColors.color1);
+            OpenChildForm(new ConfiguracionForms());
             leftBorderBtn.Visible = false;
         }
     }

@@ -124,17 +124,29 @@
     <Compile Include="Views\Forms\PuntoVenta\HTRABAJOS\ComprasForms.Designer.cs">
       <DependentUpon>ComprasForms.cs</DependentUpon>
     </Compile>
+    <Compile Include="Views\Forms\PuntoVenta\HTRABAJOS\ConfiguracionForms.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\Forms\PuntoVenta\HTRABAJOS\ConfiguracionForms.Designer.cs">
+      <DependentUpon>ConfiguracionForms.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Forms\PuntoVenta\HTRABAJOS\DepartamentoForms.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\Forms\PuntoVenta\HTRABAJOS\DepartamentoForms.Designer.cs">
+      <DependentUpon>DepartamentoForms.cs</DependentUpon>
+    </Compile>
     <Compile Include="Views\Forms\PuntoVenta\HTRABAJOS\ProductosForms.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Views\Forms\PuntoVenta\HTRABAJOS\ProductosForms.Designer.cs">
       <DependentUpon>ProductosForms.cs</DependentUpon>
     </Compile>
-    <Compile Include="Views\Forms\PuntoVenta\HTRABAJOS\Proveedores.cs">
+    <Compile Include="Views\Forms\PuntoVenta\HTRABAJOS\ProveedoresForms.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Views\Forms\PuntoVenta\HTRABAJOS\Proveedores.Designer.cs">
-      <DependentUpon>Proveedores.cs</DependentUpon>
+    <Compile Include="Views\Forms\PuntoVenta\HTRABAJOS\ProveedoresForms.Designer.cs">
+      <DependentUpon>ProveedoresForms.cs</DependentUpon>
     </Compile>
     <Compile Include="Views\Forms\PuntoVenta\PuntoVentaForm.cs">
       <SubType>Form</SubType>
@@ -179,11 +191,17 @@
     <EmbeddedResource Include="Views\Forms\PuntoVenta\HTRABAJOS\ComprasForms.resx">
       <DependentUpon>ComprasForms.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Views\Forms\PuntoVenta\HTRABAJOS\ConfiguracionForms.resx">
+      <DependentUpon>ConfiguracionForms.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\Forms\PuntoVenta\HTRABAJOS\DepartamentoForms.resx">
+      <DependentUpon>DepartamentoForms.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Views\Forms\PuntoVenta\HTRABAJOS\ProductosForms.resx">
       <DependentUpon>ProductosForms.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Views\Forms\PuntoVenta\HTRABAJOS\Proveedores.resx">
-      <DependentUpon>Proveedores.cs</DependentUpon>
+    <EmbeddedResource Include="Views\Forms\PuntoVenta\HTRABAJOS\ProveedoresForms.resx">
+      <DependentUpon>ProveedoresForms.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Views\Forms\PuntoVenta\PuntoVentaForm.resx">
       <DependentUpon>PuntoVentaForm.cs</DependentUpon>
