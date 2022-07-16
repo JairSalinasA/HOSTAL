@@ -277,7 +277,7 @@ namespace PRESENTATION.Views.Forms
             this.iconButton6.Padding = new System.Windows.Forms.Padding(10);
             this.iconButton6.Size = new System.Drawing.Size(145, 41);
             this.iconButton6.TabIndex = 6;
-            this.iconButton6.Text = "F7 DPTO/CAT.";
+            this.iconButton6.Text = "F7 ALMACEN";
             this.iconButton6.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.iconButton6.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.iconButton6.UseVisualStyleBackColor = false;
