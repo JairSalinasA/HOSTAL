@@ -19,7 +19,8 @@ namespace PRESENTATION
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Desktop()); 
+            //Application.Run(new Desktop());
+            Application.Run(new Login());
         }
     }
 }
