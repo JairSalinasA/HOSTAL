@@ -75,5 +75,30 @@ namespace DATAACCES.Respositories
             parameters.Add(new SqlParameter("@userID",userID));
             return ExecuteNonQuery(delete);
         }
+
+        public bool Login(string loginName, string password)
+        {
+            using (var connection = GetConnection())
+            {
+                connection.Open();
+                using (var command = new SqlCommand())
+                {
+                    command.Connection = connection;
+                    command.CommandText = "SELECT * FROM USERS WHERE LoginName=@loginName and Password=@password";
+                    command.Parameters.AddWithValue("@loginName", loginName);
+                    command.Parameters.AddWithValue("@password", password);
+                    command.CommandType = CommandType.Text;
+                    SqlDataReader reader = command.ExecuteReader();
+                    if (reader.HasRows)
+                    {
+                        return true;
+                    }
+                    else
+                    {
+                        return false;
+                    }
+                }
+            }
+        }
     }
 }

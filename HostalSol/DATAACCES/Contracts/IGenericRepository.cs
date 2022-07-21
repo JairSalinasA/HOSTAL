@@ -12,5 +12,7 @@ namespace DATAACCES.Contracts
         int Edit(Entity entity);
         int Remove(int userid);
         IEnumerable<Entity> GetAll();
+
+        bool Login(string username, string password);
     }
 }

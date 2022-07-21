@@ -41,6 +41,7 @@ namespace PRESENTATION.Views.Forms
             this.btnDashboard = new FontAwesome.Sharp.IconButton();
             this.btnHome = new System.Windows.Forms.PictureBox();
             this.panelMenu = new System.Windows.Forms.Panel();
+            this.iconButton2 = new FontAwesome.Sharp.IconButton();
             this.panel4 = new System.Windows.Forms.Panel();
             this.panelDesktop = new System.Windows.Forms.Panel();
             this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
@@ -67,7 +68,7 @@ namespace PRESENTATION.Views.Forms
             this.panelBuscar.Location = new System.Drawing.Point(233, 0);
             this.panelBuscar.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.panelBuscar.Name = "panelBuscar";
-            this.panelBuscar.Size = new System.Drawing.Size(1671, 62);
+            this.panelBuscar.Size = new System.Drawing.Size(1137, 50);
             this.panelBuscar.TabIndex = 1;
             // 
             // tableLayoutPanel1
@@ -80,7 +81,7 @@ namespace PRESENTATION.Views.Forms
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 58F));
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 61F));
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 62F));
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 91F));
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 94F));
             this.tableLayoutPanel1.Controls.Add(this.iconButton1, 0, 0);
             this.tableLayoutPanel1.Controls.Add(this.panel2, 7, 0);
             this.tableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
@@ -89,7 +90,7 @@ namespace PRESENTATION.Views.Forms
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
             this.tableLayoutPanel1.RowCount = 1;
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel1.Size = new System.Drawing.Size(1671, 62);
+            this.tableLayoutPanel1.Size = new System.Drawing.Size(1137, 50);
             this.tableLayoutPanel1.TabIndex = 0;
             // 
             // iconButton1
@@ -97,15 +98,15 @@ namespace PRESENTATION.Views.Forms
             this.iconButton1.Dock = System.Windows.Forms.DockStyle.Left;
             this.iconButton1.FlatAppearance.BorderSize = 0;
             this.iconButton1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.iconButton1.IconChar = FontAwesome.Sharp.IconChar.Bars;
+            this.iconButton1.IconChar = FontAwesome.Sharp.IconChar.Navicon;
             this.iconButton1.IconColor = System.Drawing.Color.White;
             this.iconButton1.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.iconButton1.IconSize = 25;
             this.iconButton1.Location = new System.Drawing.Point(3, 4);
             this.iconButton1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.iconButton1.Name = "iconButton1";
-            this.iconButton1.Padding = new System.Windows.Forms.Padding(12, 12, 12, 12);
-            this.iconButton1.Size = new System.Drawing.Size(50, 54);
+            this.iconButton1.Padding = new System.Windows.Forms.Padding(12);
+            this.iconButton1.Size = new System.Drawing.Size(44, 42);
             this.iconButton1.TabIndex = 1;
             this.iconButton1.UseVisualStyleBackColor = true;
             this.iconButton1.Click += new System.EventHandler(this.iconButton1_Click);
@@ -114,10 +115,10 @@ namespace PRESENTATION.Views.Forms
             // 
             this.panel2.Controls.Add(this.rjCircularPictureBox1);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel2.Location = new System.Drawing.Point(1582, 4);
+            this.panel2.Location = new System.Drawing.Point(1044, 4);
             this.panel2.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(86, 54);
+            this.panel2.Size = new System.Drawing.Size(90, 42);
             this.panel2.TabIndex = 2;
             // 
             // rjCircularPictureBox1
@@ -132,8 +133,8 @@ namespace PRESENTATION.Views.Forms
             this.rjCircularPictureBox1.Location = new System.Drawing.Point(16, 0);
             this.rjCircularPictureBox1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.rjCircularPictureBox1.Name = "rjCircularPictureBox1";
-            this.rjCircularPictureBox1.Padding = new System.Windows.Forms.Padding(12, 12, 12, 12);
-            this.rjCircularPictureBox1.Size = new System.Drawing.Size(54, 54);
+            this.rjCircularPictureBox1.Padding = new System.Windows.Forms.Padding(12);
+            this.rjCircularPictureBox1.Size = new System.Drawing.Size(45, 45);
             this.rjCircularPictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.rjCircularPictureBox1.TabIndex = 0;
             this.rjCircularPictureBox1.TabStop = false;
@@ -150,11 +151,11 @@ namespace PRESENTATION.Views.Forms
             this.btnpos.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.btnpos.IconSize = 30;
             this.btnpos.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnpos.Location = new System.Drawing.Point(0, 440);
+            this.btnpos.Location = new System.Drawing.Point(0, 398);
             this.btnpos.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btnpos.Name = "btnpos";
             this.btnpos.Padding = new System.Windows.Forms.Padding(12, 0, 0, 0);
-            this.btnpos.Size = new System.Drawing.Size(233, 74);
+            this.btnpos.Size = new System.Drawing.Size(233, 60);
             this.btnpos.TabIndex = 6;
             this.btnpos.Text = "Punto de venta";
             this.btnpos.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -169,16 +170,16 @@ namespace PRESENTATION.Views.Forms
             this.btnInventario.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnInventario.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnInventario.ForeColor = System.Drawing.Color.Gainsboro;
-            this.btnInventario.IconChar = FontAwesome.Sharp.IconChar.Boxes;
+            this.btnInventario.IconChar = FontAwesome.Sharp.IconChar.BoxesAlt;
             this.btnInventario.IconColor = System.Drawing.Color.Gainsboro;
             this.btnInventario.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.btnInventario.IconSize = 30;
             this.btnInventario.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnInventario.Location = new System.Drawing.Point(0, 366);
+            this.btnInventario.Location = new System.Drawing.Point(0, 338);
             this.btnInventario.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btnInventario.Name = "btnInventario";
             this.btnInventario.Padding = new System.Windows.Forms.Padding(12, 0, 0, 0);
-            this.btnInventario.Size = new System.Drawing.Size(233, 74);
+            this.btnInventario.Size = new System.Drawing.Size(233, 60);
             this.btnInventario.TabIndex = 5;
             this.btnInventario.Text = "Admin Inventario";
             this.btnInventario.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -198,11 +199,11 @@ namespace PRESENTATION.Views.Forms
             this.btnHotel.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.btnHotel.IconSize = 30;
             this.btnHotel.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnHotel.Location = new System.Drawing.Point(0, 292);
+            this.btnHotel.Location = new System.Drawing.Point(0, 278);
             this.btnHotel.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btnHotel.Name = "btnHotel";
             this.btnHotel.Padding = new System.Windows.Forms.Padding(12, 0, 0, 0);
-            this.btnHotel.Size = new System.Drawing.Size(233, 74);
+            this.btnHotel.Size = new System.Drawing.Size(233, 60);
             this.btnHotel.TabIndex = 4;
             this.btnHotel.Text = "Admin Hotel";
             this.btnHotel.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -226,7 +227,7 @@ namespace PRESENTATION.Views.Forms
             this.btnDashboard.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btnDashboard.Name = "btnDashboard";
             this.btnDashboard.Padding = new System.Windows.Forms.Padding(12, 0, 0, 0);
-            this.btnDashboard.Size = new System.Drawing.Size(233, 74);
+            this.btnDashboard.Size = new System.Drawing.Size(233, 60);
             this.btnDashboard.TabIndex = 3;
             this.btnDashboard.Text = "Dashboard";
             this.btnDashboard.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -250,6 +251,7 @@ namespace PRESENTATION.Views.Forms
             // panelMenu
             // 
             this.panelMenu.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(4)))), ((int)(((byte)(5)))), ((int)(((byte)(20)))));
+            this.panelMenu.Controls.Add(this.iconButton2);
             this.panelMenu.Controls.Add(this.btnpos);
             this.panelMenu.Controls.Add(this.btnInventario);
             this.panelMenu.Controls.Add(this.btnHotel);
@@ -259,8 +261,32 @@ namespace PRESENTATION.Views.Forms
             this.panelMenu.Location = new System.Drawing.Point(0, 0);
             this.panelMenu.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.panelMenu.Name = "panelMenu";
-            this.panelMenu.Size = new System.Drawing.Size(233, 1041);
+            this.panelMenu.Size = new System.Drawing.Size(233, 749);
             this.panelMenu.TabIndex = 3;
+            // 
+            // iconButton2
+            // 
+            this.iconButton2.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.iconButton2.FlatAppearance.BorderSize = 0;
+            this.iconButton2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.iconButton2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.iconButton2.ForeColor = System.Drawing.Color.Gainsboro;
+            this.iconButton2.IconChar = FontAwesome.Sharp.IconChar.DoorClosed;
+            this.iconButton2.IconColor = System.Drawing.Color.Gainsboro;
+            this.iconButton2.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.iconButton2.IconSize = 30;
+            this.iconButton2.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.iconButton2.Location = new System.Drawing.Point(0, 675);
+            this.iconButton2.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.iconButton2.Name = "iconButton2";
+            this.iconButton2.Padding = new System.Windows.Forms.Padding(12, 0, 0, 0);
+            this.iconButton2.Size = new System.Drawing.Size(233, 74);
+            this.iconButton2.TabIndex = 7;
+            this.iconButton2.Text = "log out";
+            this.iconButton2.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.iconButton2.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.iconButton2.UseVisualStyleBackColor = true;
+            this.iconButton2.Click += new System.EventHandler(this.iconButton2_Click);
             // 
             // panel4
             // 
@@ -278,10 +304,10 @@ namespace PRESENTATION.Views.Forms
             this.panelDesktop.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(35)))), ((int)(((byte)(55)))));
             this.panelDesktop.Controls.Add(this.tableLayoutPanel2);
             this.panelDesktop.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panelDesktop.Location = new System.Drawing.Point(233, 62);
+            this.panelDesktop.Location = new System.Drawing.Point(233, 50);
             this.panelDesktop.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.panelDesktop.Name = "panelDesktop";
-            this.panelDesktop.Size = new System.Drawing.Size(1671, 979);
+            this.panelDesktop.Size = new System.Drawing.Size(1137, 699);
             this.panelDesktop.TabIndex = 4;
             // 
             // tableLayoutPanel2
@@ -301,17 +327,17 @@ namespace PRESENTATION.Views.Forms
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
-            this.tableLayoutPanel2.Size = new System.Drawing.Size(1671, 979);
+            this.tableLayoutPanel2.Size = new System.Drawing.Size(1137, 699);
             this.tableLayoutPanel2.TabIndex = 8;
             // 
             // pictureBox1
             // 
             this.pictureBox1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(560, 330);
+            this.pictureBox1.Location = new System.Drawing.Point(382, 237);
             this.pictureBox1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(551, 318);
+            this.pictureBox1.Size = new System.Drawing.Size(373, 225);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox1.TabIndex = 7;
             this.pictureBox1.TabStop = false;
@@ -319,10 +345,10 @@ namespace PRESENTATION.Views.Forms
             // panel1
             // 
             this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel1.Location = new System.Drawing.Point(1117, 656);
+            this.panel1.Location = new System.Drawing.Point(761, 470);
             this.panel1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(551, 319);
+            this.panel1.Size = new System.Drawing.Size(373, 225);
             this.panel1.TabIndex = 8;
             // 
             // label2
@@ -331,7 +357,7 @@ namespace PRESENTATION.Views.Forms
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 26.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.White;
-            this.label2.Location = new System.Drawing.Point(660, 283);
+            this.label2.Location = new System.Drawing.Point(393, 190);
             this.label2.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(351, 39);
@@ -342,7 +368,7 @@ namespace PRESENTATION.Views.Forms
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1904, 1041);
+            this.ClientSize = new System.Drawing.Size(1370, 749);
             this.Controls.Add(this.panelDesktop);
             this.Controls.Add(this.panelBuscar);
             this.Controls.Add(this.panelMenu);
@@ -386,5 +412,6 @@ namespace PRESENTATION.Views.Forms
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Panel panel2;
+        private FontAwesome.Sharp.IconButton iconButton2;
     }
 }

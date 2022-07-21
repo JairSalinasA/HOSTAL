@@ -206,6 +206,13 @@ namespace PRESENTATION.Views.Forms
 
         }
 
+        private void iconButton2_Click(object sender, EventArgs e)
+        {
+            if (MessageBox.Show("Esta realmente seguro de cerrar sesion?", "Warning",
+                MessageBoxButtons.YesNo, MessageBoxIcon.Warning) == DialogResult.Yes)
+                this.Close();
+        }
+
         //private void rjToggleButton1_CheckedChanged(object sender, EventArgs e)
         //{
 
@@ -223,7 +230,7 @@ namespace PRESENTATION.Views.Forms
         //        Properties.Settings.Default.Save();
         //        CambiarColores(Properties.Settings.Default.Tema);
         //    }
-           
+
         //}
     }
 }

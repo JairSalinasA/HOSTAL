@@ -44,8 +44,15 @@ namespace DOMAIN.Models
 
         public UsersModels()
         {
-            usersRepository = new UsersRepository();
+            usersRepository = new UsersRepository(); 
         }
+
+        public bool LoginUser(string loginName, string password)
+        {
+            usersRepository = new UsersRepository();
+            return usersRepository.Login(loginName, password);
+        }
+
 
         public string StateChanges()
         {
@@ -113,6 +120,8 @@ namespace DOMAIN.Models
             }
             return listUsers;
         }
+
+
     }
 }
 
